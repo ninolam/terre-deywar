@@ -1,3 +1,30 @@
 .Header {
-  
+  background-color: $backgroundPrimary;
+  height: $headerHeight;
+  @include breakpoint(mobile) {
+    height: $headerHeightMobile;
+  }
+  &__container {
+    height: 100%;
+    @include container();
+    @include flexBetween();
+  }
+
+  &__logo {
+    width: 90px;
+    height: 90px;
+    @include breakpoint(mobile) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__links {
+    @include flex(10rem);
+  }
+
+  &__link {
+    font-size: $fontSizeRegular;
+    color: $colorPrimary;
+  }
 }
