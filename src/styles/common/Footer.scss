@@ -1,0 +1,6 @@
+.Footer {
+  background-color: $backgroundPrimary;
+  font-size: $fontSizeSmall;
+
+  @include title();
+}

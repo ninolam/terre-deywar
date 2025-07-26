@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="Footer">
 
@@ -22,10 +22,10 @@ export const Footer = () => {
       </div>
 
       <div>
-        <h3>Droits d'Auteur</h3>
+        <h3>Droits d&apos;Auteur</h3>
         <Link href="/home">Mentions légales</Link>
         <Link href="/home">Politique de confidentialité</Link>
-        <Link href="/home">condition Générale d'Utilisation</Link>
+        <Link href="/home">condition Générale d&apos;Utilisation</Link>
       </div>
 
     </section>
@@ -34,10 +34,12 @@ export const Footer = () => {
 
     <section>
       <div>
-        <p>© 2025 Terre d'Eywar. Tous droits réservés.</p>
+        <p>© 2025 Terre d&apos;Eywar. Tous droits réservés.</p>
       </div>
     </section>
 
     </footer>
   )
 }
+
+export default Footer
