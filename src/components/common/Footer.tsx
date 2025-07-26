@@ -1,15 +1,15 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { footerBlocs } from "@/utils/data";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { footerBlocs } from '@/utils/data';
 
 const Footer = () => {
   return (
-    <footer className="Footer">
-      <section className="Footer__container">
-        <div className="Footer__links">
+    <footer className='Footer'>
+      <section className='Footer__container'>
+        <div className='Footer__links'>
           {footerBlocs.map((bloc) => (
-            <div className="Footer__links__bloc" key={bloc.title}>
+            <div className='Footer__links__bloc' key={bloc.title}>
               <h3>{bloc.title}</h3>
               {bloc.links.map((link) => (
                 <Link key={link.label} href={link.href}>
@@ -19,10 +19,10 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <Link href="/" className="Footer__logo">
-          <Image src="/logo.jpeg" alt="Logo" width={120} height={120} />
+        <Link href='/' className='Footer__logo'>
+          <Image src='/logo.jpeg' alt='Logo' width={120} height={120} />
         </Link>
-        <div className="Footer__copyright">
+        <div className='Footer__copyright'>
           <p>© 2025 Terre d&apos;Eywar. Tous droits réservés.</p>
           {/* <ul className="Footer__socials" role="list">
             <li>
