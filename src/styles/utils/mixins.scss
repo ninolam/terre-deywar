@@ -11,7 +11,7 @@ FONTS
 }
 
 @mixin text($size: 18px, $spacing: -0.25px) {
-  font-family: Helvetica, sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: $size;
