@@ -19,11 +19,9 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="Footer__logo">
-          <Link href="/">
-            <Image src="/logo.jpeg" alt="Logo" width={120} height={120} />
-          </Link>
-        </div>
+        <Link href="/" className="Footer__logo">
+          <Image src="/logo.jpeg" alt="Logo" width={120} height={120} />
+        </Link>
         <div className="Footer__copyright">
           <p>© 2025 Terre d&apos;Eywar. Tous droits réservés.</p>
           {/* <ul className="Footer__socials" role="list">
