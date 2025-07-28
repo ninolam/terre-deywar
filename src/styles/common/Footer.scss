@@ -21,13 +21,12 @@
   &__logo {
     display: flex;
     justify-content: center;
+    padding-top: 75px;
   }
   &__copyright {
-    display: flex;
-    justify-content: left;
-    border-top: 1px solid #50300A;
+    border-top: 1px solid #50300a36;
     p {
-      padding: 25px;
+      padding: 25px 0;
     }
   }
 }
