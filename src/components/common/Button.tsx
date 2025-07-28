@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
 
 const Button = ({ text, classNameModifier, action, href }: { text: string, classNameModifier?: string, action?: () => void, href?: string }) => {
-  const buttonClass = `Button ${classNameModifier ? `Button--${classNameModifier}` : ''}`
+  const buttonClass = `Button ${classNameModifier ? `Button--${classNameModifier}` : ''}`;
 
   if (href) {
     return (
@@ -12,11 +12,11 @@ const Button = ({ text, classNameModifier, action, href }: { text: string, class
         className={buttonClass}>
         {text}
       </Link>
-    )
+    );
   }
   return (
     <button className={buttonClass} onClick={action}>{text}</button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

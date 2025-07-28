@@ -1,23 +1,23 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import Button from './Button'
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import Button from './Button';
 
 const Header = () => {
   const links = [
     {
       label: 'Nos circuits',
-      href: '/circuits'
+      href: '/circuits',
     },
     {
       label: 'Notre histoire',
-      href: '/about'
+      href: '/about',
     },
     {
       label: 'Contactez-nous',
-      href: '/contact'
+      href: '/contact',
     },
-  ]
+  ];
 
   return (
     <header className="Header">
@@ -37,7 +37,7 @@ const Header = () => {
         <Button text="Réserver" classNameModifier="primary" />
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

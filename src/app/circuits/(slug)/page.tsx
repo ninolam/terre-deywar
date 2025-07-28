@@ -1,12 +1,12 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { useParams } from "next/navigation";
+// import Image from 'next/image';
+import { useParams } from 'next/navigation';
 
 export default function Home() {
   const { slug } = useParams();
 
   return (
-    <div className={styles.page}>
+    <div>
+      <h1>Circuit: {slug}</h1>
       {/* <Intro */}
     </div>
   );

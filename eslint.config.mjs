@@ -13,6 +13,16 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals"),
   {
+    ignores: [
+      "node_modules/",
+      ".next/",
+      "out/",
+      "dist/",
+      "build/",
+      "*.log",
+      ".eslintcache",
+      ".DS_Store",
+    ],
     rules: {
       // Code Quality
       "no-console": "warn",
