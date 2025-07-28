@@ -1,0 +1,32 @@
+.Footer {
+  background-color: $backgroundPrimary;
+  font-size: $fontSizeSmall;
+  color: $colorPrimary;
+  @include title();
+  &__container {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 0;
+  }
+  &__links {
+    @include flexBetween();
+    &__bloc {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+  }
+  &__copyright {
+    border-top: 1px solid #50300a36;
+    p {
+      padding: 25px 0;
+    }
+  }
+}
