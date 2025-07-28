@@ -20,6 +20,39 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Code Quality
+
+This project uses ESLint for code quality and consistency. The configuration includes:
+
+- **Code Quality**: Prevents common mistakes like unused variables, console statements
+- **Best Practices**: Enforces strict equality, proper error handling
+- **Readability**: Consistent formatting with single quotes, semicolons, proper spacing
+- **React/Next.js**: Optimized rules for React 17+ and Next.js
+- **Accessibility**: JSX accessibility rules for better user experience
+
+### Running ESLint
+
+```bash
+# Run linting
+npm run lint
+
+# Fix auto-fixable issues
+npm run lint -- --fix
+```
+
+### GitHub Actions
+
+The project includes automated CI/CD workflows:
+
+- **CI/CD** (`.github/workflows/ci.yml`): Runs on push/PR to main/develop branches
+- **Lint** (`.github/workflows/lint.yml`): Dedicated linting workflow with manual trigger option
+
+Both workflows include:
+- ESLint checking
+- TypeScript type checking
+- Build verification
+- Node.js version matrix testing (18.x, 20.x)
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
