@@ -1,69 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Terre d'Eywar - Agence de Voyage Algérienne
 
-## Getting Started
+## 📋 Description du Projet
 
-First, run the development server:
+Terre d'Eywar, une agence de voyage basée en Algérie. Spécialisée dans l'organisation de circuits touristiques tout inclus. Ce projet exécuter avec React & Next.js nous offre une expérience utilisateur optimale pour découvrir et réserver des voyages authentiques en Algérie.
+
+## 🏗️ Architecture du Projet
+
+### Structure des Pages
+
+Le site comprend plusieurs pages principales accessibles via la navigation :
+
+- **Page d'Accueil** ([`/`](src/app/page.tsx)) : Présentation générale de l'agence et mise en avant des circuits phares.
+- **Nos Circuits** ([`/circuits`](src/app/circuits/page.tsx)) : Catalogue complet des circuits proposés par l'agence.
+- **Circuit [...]** ([`/circuitId`](src/app/circuits/slug/page.tsx)) : Les détails du circuit sélectionné.
+- **Notre Histoire** ([`/about`](src/app/about/page.tsx)) : Présentation de l'agence, son histoire et ses valeurs.
+- **Contactez-nous** ([`/contact`](src/app/contact/page.tsx)) : Formulaire de contact et informations pratiques.
+
+### Pages Complémentaires (Footer)
+
+**Contenu & Engagement :**
+
+- **Témoignages Clients** ([`/testimonials`](src/app/testimonials/page.tsx)) : Avis et retours d'expérience des clients.
+- **Blog Voyage** ([`/blog`](src/app/blog/page.tsx)) : Articles et conseils de voyage sur l'Algérie.
+- **FAQ** ([`/faq`](src/app/faq/page.tsx)) : Questions fréquemment posées et réponses.
+
+**Pages Légales :**
+
+- **Mentions légales** ([`/legal`](src/app/legal/page.tsx)) : Informations légales de l'agence.
+- **Politique de confidentialité** ([`/privacy`](src/app/privacy/page.tsx)) : Traitement des données personnelles.
+- **Conditions Générales d'Utilisation** ([`/terms`](src/app/terms/page.tsx)) : CGU du site et services.
+
+### Navigation et Structure
+
+La navigation est définie dans [`headerLinks`](src/utils/data.ts) et comprend :
+
+- Liens de navigation principaux dans le [`Header`](src/components/common/Header.tsx).
+- Liens utiles organisés en blocs dans le [`Footer`](src/components/common/Footer.tsx) via [`footerBlocs`](src/utils/data.ts).
+- Bouton de réservation accessible depuis toutes les pages.
+
+## 🚀 Étapes de Développement
+
+### Phase 1 : Développement "Dur" (Statique)
+
+1. **Setup initial** : Configuration React, Next.js avec TypeScript et SCSS.
+2. **Structure de base** : Création du layout principal avec Header/Footer.
+3. **Pages statiques** : Développement des pages avec contenu fixe.
+4. **Styles globaux** : Mise en place du système de design avec variables et mixins SCSS.
+
+### Phase 2 : Développement Dynamique et Refactorisation
+
+1. **Factorisation des composants** : Extraction de composants réutilisables.
+2. **Segmentation du code** : Organisation modulaire pour une meilleure lisibilité.
+3. **Gestion des données** : Implémentation de la gestion dynamique du contenu.
+4. **Optimisation** : Performance et accessibilité.
+
+## 🛠️ Technologies Utilisées
+
+- **Framework** : React et Next.js 15.4.4 avec App Router.
+- **Language** : TypeScript pour un code type-safe.
+- **Styling** : SCSS avec architecture modulaire.
+- **Qualité** : ESLint avec règles strictes et workflows GitHub Actions.
+- **Fonts** : Bebas Neue (titres) et Titillium Web (texte).
+
+## 📁 Structure du Code
+
+### Composants Communs
+
+- [`Header`](src/components/common/Header.tsx) : Navigation principale avec logo et menu.
+- [`Footer`](src/components/common/Footer.tsx) : Liens organisés et informations légales.
+- [`Button`](src/components/common/Button.tsx) : Composant bouton réutilisable.
+
+### Styles
+
+- [`globals.scss`](src/styles/globals.scss) : Styles globaux et imports.
+- [`variables.scss`](src/styles/utils/variables.scss) : Variables de couleurs, tailles et polices.
+- [`mixins.scss`](src/styles/utils/mixins.scss) : Mixins pour typography, breakpoints et layout.
+
+### Données
+
+- [`data.ts`](src/utils/data.ts) : Configuration des liens de navigation et footer.
+
+## 🎨 Système de Design
+
+### Palette de Couleurs
+
+- **Primaire** : `#50300A` (brun terreux)
+- **Background** : `#E4D3B9` (beige chaleureux)
+- **Contraste** : Blanc et noir
+
+### Typography
+
+- **Titres** : Bebas Neue (caractère fort et moderne)
+- **Texte** : Titillium Web (lisibilité optimale)
+
+### Responsive Design
+
+Breakpoints définis pour une expérience optimale :
+
+- Mobile : ≤ 767px
+- Tablet : ≤ 1023px
+- Small Desktop : ≤ 1279px
+- Medium Desktop : ≤ 1414px
+
+## 🔧 Scripts de Développement
 
 ```bash
+# Lancement du serveur de développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Build de production
+npm run build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Code Quality
-
-This project uses ESLint for code quality and consistency. The configuration includes:
-
-- **Code Quality**: Prevents common mistakes like unused variables, console statements
-- **Best Practices**: Enforces strict equality, proper error handling
-- **Readability**: Consistent formatting with single quotes, semicolons, proper spacing
-- **React/Next.js**: Optimized rules for React 17+ and Next.js
-- **Accessibility**: JSX accessibility rules for better user experience
-
-### Running ESLint
-
-```bash
-# Run linting
+# Vérification du code (ESLint)
 npm run lint
 
-# Fix auto-fixable issues
-npm run lint -- --fix
+# Démarrage en production
+npm start
 ```
+
+## 📊 Qualité du Code
+
+### ESLint Configuration
+
+Le projet utilise une configuration ESLint stricte avec :
+
+- **Qualité** : Prévention des erreurs courantes.
+- **Bonnes pratiques** : Égalité stricte, gestion d'erreurs.
+- **Lisibilité** : Formatage cohérent. (quotes simples, point-virgules, ...)
+- **React/Next.js** : Règles optimisées pour React 17+ et Next.js.
+- **Accessibilité** : Règles JSX pour une meilleure UX.
 
 ### GitHub Actions
 
-The project includes automated CI/CD workflows:
+Workflows automatisés pour :
 
-- **CI/CD** (`.github/workflows/ci.yml`): Runs on push/PR to main/develop branches
-- **Lint** (`.github/workflows/lint.yml`): Dedicated linting workflow with manual trigger option
+- **CI/CD** : Tests sur push/PR (branches main).
+- **Lint** : Vérification qualité code avec déclenchement manuel.
+- **Multi-version** : Tests Node.js 18.x et 20.x
 
-Both workflows include:
-- ESLint checking
-- TypeScript type checking
-- Build verification
-- Node.js version matrix testing (18.x, 20.x)
+## 🚦 Getting Started
 
-## Learn More
+1. **Installation des dépendances**
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Lancement du serveur de développement**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+3. **Accès à l'application**
+   Ouvrir [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Prochaines Étapes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Contenu dynamique** : Intégration d'une API pour les circuits.
+2. **Système de réservation** : Implémentation du processus de booking.
+3. **Galerie photos** : Ajout d'un système de galerie pour les destinations.
+4. **Blog voyage** : Section blog pour le contenu éditorial.
+5. **SEO** : Optimisation pour les moteurs de recherche.
+
+---
+
+Développé avec ❤️ pour promouvoir le tourisme authentique en Algérie 🇩🇿
