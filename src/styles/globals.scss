@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-@import './utils/variables.scss';
-@import './utils/mixins.scss';
-@import './common/Header.scss';
-@import './common/Button.scss';
-@import './common/Footer.scss';
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./common/Header.scss";
+@import "./common/Button.scss";
+@import "./common/Footer.scss";
+
 
 html,
 body {
@@ -30,15 +31,6 @@ button {
   @include text();
 }
 
-@include breakpoint(mobile) {
-  p,
-  span,
-  a,
-  button {
-    @include textMobile();
-  }
-}
-
 h1,
 h2,
 h3,
@@ -46,17 +38,6 @@ h4,
 h5,
 h6 {
   @include title();
-}
-
-@include breakpoint(mobile) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @include titleMobile();
-  }
 }
 
 ul {
