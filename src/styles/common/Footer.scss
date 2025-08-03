@@ -2,31 +2,56 @@
   background-color: $backgroundPrimary;
   font-size: $fontSizeSmall;
   color: $colorPrimary;
-  @include title();
+  // height: $footerHeight; //   Si tu vois ce fichier il y a un bug css que j'ai pas su régler sur ce que t'as parametrer de base
+  @include breakpoint(mobile) {
+    // height: $footerHeightMobile; //   Idem ici
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
   &__container {
     @include container();
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 25px 0;
+    @include breakpoint(mobile) {
+      gap: 15px;
+      padding: 15px 0;
+    }
   }
   &__links {
     @include flexBetween();
+    @include breakpoint(mobile) {
+      gap: 10px;
+      align-items: flex-start;
+    }
     &__bloc {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      @include breakpoint(mobile) {
+        gap: 5px;
+        width: 90%;
+      }
     }
   }
   &__logo {
     display: flex;
     justify-content: center;
     padding-top: 75px;
+    @include breakpoint(mobile) {
+      padding-top: 37.5px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
   }
   &__copyright {
     border-top: 1px solid #50300a36;
-    p {
-      padding: 25px 0;
+    padding: 25px 0;
+    @include breakpoint(mobile) {
+      padding: 12.5px 0;
     }
   }
 }
