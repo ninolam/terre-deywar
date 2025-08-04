@@ -1,7 +1,11 @@
-export default function Home() {
+import Discover from '@/components/home/Discover';
 
+const Home = () => {
   return (
-    <div>
-    </div>
+    <>
+      <Discover />
+    </>
   );
-}
+};
+
+export default Home;

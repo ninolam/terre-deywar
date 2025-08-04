@@ -59,7 +59,7 @@ Breakpoints
   text-overflow: ellipsis;
   white-space: nowrap !important;
   &:after {
-    content: "" !important;
+    content: '' !important;
     display: block;
   }
 }
@@ -137,7 +137,7 @@ Breakpoints
   max-width: $containerMaxWidth;
   width: 100%;
   margin: 0 auto;
-  @include breakpoint(mobile) {
+  @include breakpoint(mediumDesktop) {
     max-width: 90%;
   }
 }

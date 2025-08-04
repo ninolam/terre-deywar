@@ -34,7 +34,7 @@ export const footerBlocs = [
     ],
   },
   {
-    title: 'Droits d\'Auteur',
+    title: "Droits d'Auteur",
     links: [
       {
         href: '/home',
@@ -46,7 +46,7 @@ export const footerBlocs = [
       },
       {
         href: '/home',
-        label: 'Condition Générale d\'Utilisation',
+        label: "Condition Générale d'Utilisation",
       },
     ],
   },
@@ -56,6 +56,22 @@ export const headerLinks = [
   {
     label: 'Nos circuits',
     href: '/circuits',
+  },
+  {
+    label: 'Notre histoire',
+    href: '/about',
+  },
+  {
+    label: 'Contactez-nous',
+    href: '/contact',
+  },
+];
+
+export const cardDiscover = [
+  {
+    title: 'De la réservation à l&apos;aventure authentique',
+    image: './',
+    p: 'Notre équipe est là pour vous accompagner à chaque étape.',
   },
   {
     label: 'Notre histoire',
