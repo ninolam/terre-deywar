@@ -2,20 +2,26 @@
 FONTS
 ***********************************************/
 
-@mixin title($size: 48px, $spacing: -1.5px) {
-  font-family: "Bebas Neue", sans-serif;
+@mixin title($size: 50px, $sizeMobile: 25px, $spacing: -1.5px) {
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: $size;
   letter-spacing: $spacing;
+  @include breakpoint(mobile) {
+    font-size: $sizeMobile;
+  }
 }
 
-@mixin text($size: 18px, $spacing: -0.25px) {
-  font-family: "Titillium Web", sans-serif;
+@mixin text($size: 20px, $sizeMobile: 10px, $spacing: -0.25px) {
+  font-family: 'Titillium Web', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: $size;
   letter-spacing: $spacing;
+  @include breakpoint(mobile) {
+    font-size: $sizeMobile;
+  }
 }
 
 /***********************************************
