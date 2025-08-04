@@ -1,0 +1,14 @@
+@import './home/discover/Card.scss';
+
+.Discover {
+  background-color: $backgroundPrimary;
+  font-size: $fontSizeSmall;
+  color: $colorPrimary;
+  &__container {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+}
