@@ -67,18 +67,20 @@ export const headerLinks = [
   },
 ];
 
-export const cardDiscover = [
+export const cardsDiscover = [
   {
     title: 'De la réservation à l&apos;aventure authentique',
-    image: './',
+    image: '@/pulic/images/tempImageEBfDr8.jpg',
     p: 'Notre équipe est là pour vous accompagner à chaque étape.',
   },
   {
-    label: 'Notre histoire',
-    href: '/about',
+    title: 'Une immersion culturelle inoubliable vous attend',
+    image: '@/pulic/images/tempImageEBfDr8.jpg',
+    p: 'Vivez des moments uniques avec les habitants.',
   },
   {
-    label: 'Contactez-nous',
-    href: '/contact',
+    title: 'Des paysages à couper le souffle',
+    image: '@/pulic/images/tempImageEBfDr8.jpg',
+    p: 'Explorez les merveilles du désert algérien à travers les différentes circuits',
   },
 ];

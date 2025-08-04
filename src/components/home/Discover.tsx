@@ -1,7 +1,8 @@
-import Button from '@/components/common/Button';
+import React from 'react';
 import Image from 'next/image';
+import Button from '@/components/common/Button';
 import { ChevronRight } from 'lucide-react';
-
+import { cardsDiscover } from '@/utils/data';
 
 const Discover = () => {
   return (
@@ -14,10 +15,18 @@ const Discover = () => {
           totale dans la culture Touareg.
         </p>
       </div>
-      <div></div>
+      {/* <div>
+        {cardsDiscover.map((card) => (
+          <div>
+            <h1>{card.title}</h1>
+            <Image src={} alt='image-' />
+            <p>{card.p}</p>
+          </div>
+        ))}
+      </div> */}
       <div>
         <Button text='Réserver' />
-        <Button text='En savoir plus' icon={<ChevronRight/>}/> 
+        <Button text='En savoir plus' icon={<ChevronRight />} />
       </div>
     </section>
   );
