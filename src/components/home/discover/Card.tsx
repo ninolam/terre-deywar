@@ -11,15 +11,16 @@ const Card = ({
   text: string;
 }) => {
   return (
-    <div key={title}>
-      <h1>{title}</h1>
+    <div key={title} className='Card'>
+      <h1 className='Card__title'>{title}</h1>
       <Image
+        className='Card__image'
         src={image}
         alt='image-section-discover'
-        width={120}
-        height={120}
+        width={350}
+        height={300}
       />
-      <p>{text}</p>
+      <p  className='Card__text'>{text}</p>
     </div>
   );
 };

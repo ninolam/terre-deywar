@@ -8,7 +8,19 @@
     @include container();
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 25px;
+    align-items: center;
+    gap: 15px;
+  }
+  &__title,
+  &__description {
+    text-align: center;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    margin: 50px 0;
   }
 }

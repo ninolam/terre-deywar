@@ -6,6 +6,7 @@
   font-size: $fontSizeSmall;
   outline: none;
   border: none;
+  display: inline-flex;
   &--transparent {
     background-color: $buttonTransparent;
   }

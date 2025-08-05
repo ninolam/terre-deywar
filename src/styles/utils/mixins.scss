@@ -2,7 +2,7 @@
 FONTS
 ***********************************************/
 
-@mixin title($size: 50px, $sizeMobile: 25px, $spacing: -1.5px) {
+@mixin title($size: 50px, $sizeMobile: 25px, $spacing: 0.5px) {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -13,7 +13,7 @@ FONTS
   }
 }
 
-@mixin text($size: 20px, $sizeMobile: 10px, $spacing: -0.25px) {
+@mixin text($size: 20px, $sizeMobile: 10px, $spacing: -0.5px) {
   font-family: 'Titillium Web', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;

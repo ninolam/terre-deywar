@@ -8,16 +8,17 @@ const Discover = () => {
   return (
     <section className='Discover'>
       <div className='Discover__container'>
-        <div className='Discover__teaser-text'>
-          <h1 className='Discover__title'>
-            Découvrez notre expérience de voyage unique
-          </h1>
-          <p className='Discover__description'>
-            Avec Terre d&apos;Eywar, chaque voyage commence par une réservation
-            simple et rapide. Vous serez ensuite guidé à travers une immersion
-            totale dans la culture Touareg.
-          </p>
-        </div>
+        <h1 className='Discover__title'>
+          Découvrez notre expérience de voyage unique
+        </h1>
+        <p className='Discover__description'>
+          Avec Terre d&apos;Eywar, chaque voyage commence par une réservation
+          simple et rapide.
+          <br />
+          Vous serez ensuite guidé à travers une immersion totale dans la
+          culture Touareg.
+        </p>
+
         <div className='Discover__cards'>
           {cardsDiscover.map((card) => (
             <Card
