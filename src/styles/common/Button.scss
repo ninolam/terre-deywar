@@ -11,9 +11,18 @@
     background-color: $buttonTransparent;
   }
 
+  &--header {
+    background-color: $lightbrown;
+    color: $darkbrown;
+    .Header--background & {
+      background-color: $buttonColor;
+      color: $colorPrimary;
+    }
+  }
+
   &--white20 {
     background-color: rgba(white, 0.2);
-    color: white;
+    color: $lightbrown;
   }
 
   &--whiteSand {

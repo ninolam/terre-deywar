@@ -6,7 +6,6 @@ import Button from './Button';
 import { headerLinks } from '@/utils/data';
 
 const Header = () => {
-
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,7 +17,6 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-
   }, []);
   return (
     <header className={`Header ${isScrolled ? 'Header--background' : ''}`}>
@@ -43,7 +41,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <Button text='Réserver' classNameModifier='primary' />
+        <Button text='Réserver' classNameModifier='header' />
       </div>
     </header>
   );
