@@ -1,9 +1,9 @@
-@import './home/discover/Card.scss';
 
 .Discover {
   background-color: $backgroundPrimary;
   font-size: $fontSizeSmall;
   color: $colorPrimary;
+  padding: $sectionPadding;
   &__container {
     @include container();
     display: flex;

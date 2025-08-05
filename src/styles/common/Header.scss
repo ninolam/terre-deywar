@@ -1,6 +1,19 @@
 .Header {
-  background-color: $backgroundPrimary;
   height: $headerHeight;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  &--background {
+    background-color: $backgroundPrimary;
+    transition: background-color 0.5s ease;
+    .Header__link {
+      color: $colorPrimary;
+    }
+  }
+
   @include breakpoint(mobile) {
     height: $headerHeightMobile;
   }
@@ -25,6 +38,6 @@
 
   &__link {
     font-size: $fontSizeRegular;
-    color: $colorPrimary;
+    color: $lightbrown;
   }
 }

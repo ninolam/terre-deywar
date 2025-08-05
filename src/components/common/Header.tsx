@@ -1,12 +1,27 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from './Button';
 import { headerLinks } from '@/utils/data';
 
 const Header = () => {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+
+  }, []);
   return (
-    <header className='Header'>
+    <header className={`Header ${isScrolled ? 'Header--background' : ''}`}>
       <div className='Header__container'>
         <Link href='/'>
           <Image
