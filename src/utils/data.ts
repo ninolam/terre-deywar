@@ -46,7 +46,7 @@ export const footerBlocs = [
       },
       {
         href: '/home',
-        label: "Condition Générale d'Utilisation",
+        label: "Condition d'Utilisation",
       },
     ],
   },
@@ -69,18 +69,18 @@ export const headerLinks = [
 
 export const cardsDiscover = [
   {
-    title: 'De la réservation à l&apos;aventure authentique',
-    image: '@/pulic/images/tempImageEBfDr8.jpg',
-    p: 'Notre équipe est là pour vous accompagner à chaque étape.',
+    title: "De la réservation à l'aventure authentique",
+    image: '/images/section-discover/image-discover-1.jpg',
+    text: 'Notre équipe est là pour vous accompagner à chaque étape.',
   },
   {
     title: 'Une immersion culturelle inoubliable vous attend',
-    image: '@/pulic/images/tempImageEBfDr8.jpg',
-    p: 'Vivez des moments uniques avec les habitants.',
+    image: '/images/section-discover/image-discover-2.jpg',
+    text: 'Vivez des moments uniques avec les habitants.',
   },
   {
     title: 'Des paysages à couper le souffle',
-    image: '@/pulic/images/tempImageEBfDr8.jpg',
-    p: 'Explorez les merveilles du désert algérien à travers les différentes circuits',
+    image: '/images/section-discover/image-discover-3.jpg',
+    text: 'Explorez les merveilles du désert algérien à travers les différentes circuits',
   },
 ];

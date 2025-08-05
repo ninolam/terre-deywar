@@ -1,4 +1,4 @@
-import Discover from '@/components/home/Discover';
+import Discover from '@/components/home/discover/Discover';
 
 const Home = () => {
   return (

@@ -1,9 +1,13 @@
 .Button {
-  background-color: $buttonTransparent;
+  background-color: $buttonColor;
   color: $colorPrimary;
   padding: 10px 20px;
   border-radius: 12px;
   font-size: $fontSizeSmall;
   outline: none;
   border: none;
+  display: inline-flex;
+  &--transparent {
+    background-color: $buttonTransparent;
+  }
 }
