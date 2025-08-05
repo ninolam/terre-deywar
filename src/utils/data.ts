@@ -46,7 +46,7 @@ export const footerBlocs = [
       },
       {
         href: '/home',
-        label: "Condition Générale d'Utilisation",
+        label: "Condition d'Utilisation",
       },
     ],
   },
