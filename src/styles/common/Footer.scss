@@ -1,25 +1,28 @@
+@use 'utils';
+
 .Footer {
-  background-color: $backgroundPrimary;
-  font-size: $fontSizeSmall;
-  color: $darkbrown;
-  @include breakpoint(mobile) {
+  background-color: utils.$backgroundPrimary;
+  font-size: utils.$fontSizeSmall;
+  color: utils.$darkbrown;
+  @include utils.breakpoint(mobile) {
     font-size: 20px;
     margin-bottom: 5px;
   }
   &__container {
-    @include container();
+    @include utils.container();
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 25px 0;
-    @include breakpoint(mobile) {
+    
+    @include utils.breakpoint(mobile) {
       gap: 15px;
       padding: 15px 0;
     }
   }
   &__links {
-    @include flexBetween();
-    @include breakpoint(mobile) {
+    @include utils.flexBetween();
+    @include utils.breakpoint(mobile) {
       gap: 10px;
       align-items: flex-start;
     }
@@ -27,7 +30,7 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      @include breakpoint(mobile) {
+      @include utils.breakpoint(mobile) {
         gap: 5px;
         width: 90%;
       }
@@ -37,7 +40,7 @@
     display: flex;
     justify-content: center;
     padding-top: 75px;
-    @include breakpoint(mobile) {
+    @include utils.breakpoint(mobile) {
       padding-top: 37.5px;
       img {
         width: 80px;
@@ -48,7 +51,7 @@
   &__copyright {
     border-top: 1px solid #50300a36;
     padding: 25px 0;
-    @include breakpoint(mobile) {
+    @include utils.breakpoint(mobile) {
       padding: 12.5px 0;
     }
   }

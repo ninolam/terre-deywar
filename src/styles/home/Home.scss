@@ -1,5 +1,7 @@
-@import './home/Intro.scss';
-@import './home/discover/Discover.scss';
-@import './home/discover/Card.scss';
-@import './home/Adventure.scss';
-@import './home/Gallery.scss';
+@use './home/Intro';
+@use './home/discover/Discover';
+@use './home/discover/Card';
+@use './home/circuits/Circuits';
+@use './home/circuits/CircuitsSlider';
+@use './home/Adventure';
+@use './home/Gallery';

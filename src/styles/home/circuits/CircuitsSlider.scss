@@ -1,0 +1,37 @@
+@use 'utils';
+
+.CircuitSlider {
+  margin: 50px 0;
+  position: relative;
+
+  &__navigation {
+    @include utils.flexBetween();
+    align-items: center;
+    margin-top: 20px;
+    &__arrows {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+
+      &-prev,
+      &-next {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 10px;
+        border-radius: 50%;
+        color: utils.$darkbrown;
+        border: 1px solid;
+        border-color: utils.$darkbrown;
+        @include utils.breakpoint(mobile) {
+          width: 35px;
+          height: 35px;
+          padding: 5px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
