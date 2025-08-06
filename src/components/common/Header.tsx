@@ -6,7 +6,7 @@ import Button from './Button';
 import { headerLinks } from '@/utils/data';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(window.scrollY > 100);
 
   useEffect(() => {
     const handleScroll = () => {

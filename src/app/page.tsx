@@ -1,7 +1,7 @@
 import Adventure from '@/components/home/Adventure';
 import Discover from '@/components/home/discover/Discover';
 import Intro from '@/components/home/Intro';
-import SomePictures from '@/components/home/SomePictures';
+import Gallery from '@/components/home/Gallery';
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <Intro />
       <Discover />
       <Adventure />
-      <SomePictures />
+      <Gallery />
     </>
   );
 };
