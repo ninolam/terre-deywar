@@ -1,30 +1,11 @@
 'use client';
+import { groupImagesByThree } from '@/utils/functions';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const Gallery = () => {
   const [randomNumber, setRandomNumber] = useState(0);
-  const generateImageNames = () => {
-    const imageNames = [];
-    // Ajustez ce nombre selon le nombre d'images dans votre dossier
-    for (let i = 1; i <= 44; i++) {
-      imageNames.push(`image-SomePictures${i}.jpg`);
-    }
-    return imageNames;
-  };
-
-  const imageNames = generateImageNames();
-
-  // Fonction pour grouper les images par 3
-  const groupImagesByThree = (images: string[]) => {
-    const groups = [];
-    for (let i = 0; i < images.length; i += 3) {
-      groups.push(images.slice(i, i + 3));
-    }
-    return groups;
-  };
-
-  const imageGroups = groupImagesByThree(imageNames);
+  const imageGroups = groupImagesByThree();
 
   useEffect(() => {
     setTimeout(() => {
