@@ -1,8 +1,7 @@
-
 .Discover {
   background-color: $backgroundPrimary;
   font-size: $fontSizeSmall;
-  color: $colorPrimary;
+  color: $darkbrown;
   padding: $sectionPadding;
   &__container {
     @include container();

@@ -1,7 +1,7 @@
 .Footer {
   background-color: $backgroundPrimary;
   font-size: $fontSizeSmall;
-  color: $colorPrimary;
+  color: $darkbrown;
   @include breakpoint(mobile) {
     font-size: 20px;
     margin-bottom: 5px;

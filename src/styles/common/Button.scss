@@ -1,6 +1,6 @@
 .Button {
   background-color: $buttonColor;
-  color: $colorPrimary;
+  color: $darkbrown;
   padding: 10px 20px;
   border-radius: 12px;
   font-size: $fontSizeSmall;
@@ -11,13 +11,22 @@
     background-color: $buttonTransparent;
   }
 
+  &--header {
+    background-color: $lightbrown;
+    color: $darkbrown;
+    .Header--background & {
+      background-color: $buttonColor;
+      color: $darkbrown;
+    }
+  }
+
   &--white20 {
     background-color: rgba(white, 0.2);
-    color: white;
+    color: $lightbrown;
   }
 
   &--whiteSand {
     background-color: $backgroundPrimary;
-    color: $colorPrimary;
+    color: $darkbrown;
   }
 }
