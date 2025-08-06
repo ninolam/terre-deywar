@@ -3,7 +3,7 @@
   width: 100%;
   background-image: url('/images/section-intro/image-intro.jpg');
   background-size: cover;
-  background-position: 25% 65%;
+  background-position: bottom;
   background-repeat: no-repeat;
   @include breakpoint(mobile) {
     height: 70vh;

@@ -1,23 +1,34 @@
 .Adventure {
-  background-image: url('/images/section-adventure/image-adventure.jpeg');
+  background-image: url('/images/section-adventure/image-adventure1.jpeg');
   height: 450px;
-  background-position: 0% 25%;
+  background-position: 0% 35%;
+  background-size: cover;
   position: relative;
-  color: $darkbrown;
+  color: $lightbrown;
+  @include breakpoint(mobile) {
+    height: 250px;
+    background-position: 0% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   &__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba($color: #000000, $alpha: 0.175);
+    background-color: rgba($color: #000000, $alpha: 0.1);
   }
   &__container {
     @include container();
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    justify-content: center;
+    height: 100%;
     gap: 25px;
+    @include breakpoint(mobile) {
+      gap: 15px;
+    }
   }
   &__buttons {
     @include flex(15px);
