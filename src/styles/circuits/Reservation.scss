@@ -1,0 +1,22 @@
+@use 'utils';
+
+.Reservation {
+  background-color: utils.$backgroundPrimary;
+  &__container {
+    @include utils.container();
+    @include utils.flex(50px);
+    flex-direction: column;
+    align-items: center;
+  }
+  &__presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__items {
+    display: flex;
+  }
+  &__item {
+    text-align: center;
+  }
+}
