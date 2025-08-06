@@ -15,17 +15,17 @@
   }
 
   &--header {
-    background-color: $lightbrown;
-    color: $darkbrown;
+    background-color: utils.$lightbrown;
+    color: utils.$darkbrown;
     .Header--background & {
-      background-color: $buttonColor;
-      color: $darkbrown;
+      background-color: utils.$buttonColor;
+      color: utils.$darkbrown;
     }
   }
 
   &--white20 {
     background-color: rgba(white, 0.2);
-    color: $lightbrown;
+    color: utils.$lightbrown;
   }
 
   &--whiteSand {

@@ -1,8 +1,9 @@
+@use 'utils';
+
 .Gallery {
-  background-color: $backgroundPrimary;
-  padding: $sectionPadding;
+  background-color: utils.$backgroundPrimary;
   &__container {
-    @include container();
+    @include utils.container();
     display: flex;
     flex-direction: column;
     align-items: center;

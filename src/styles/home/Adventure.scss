@@ -1,11 +1,13 @@
+@use 'utils';
+
 .Adventure {
   background-image: url('/images/section-adventure/image-adventure1.jpg');
   height: 450px;
   background-position: 0% 35%;
   background-size: cover;
   position: relative;
-  color: $lightbrown;
-  @include breakpoint(mobile) {
+  color: utils.$lightbrown;
+  @include utils.breakpoint(mobile) {
     height: 250px;
     background-position: 0% 35%;
     background-size: cover;
@@ -20,7 +22,7 @@
     background-color: rgba($color: black, $alpha: 0.2);
   }
   &__container {
-    @include container();
+    @include utils.container();
     position: relative;
     z-index: 10;
     display: flex;
@@ -28,11 +30,11 @@
     justify-content: center;
     height: 100%;
     gap: 25px;
-    @include breakpoint(mobile) {
+    @include utils.breakpoint(mobile) {
       gap: 15px;
     }
   }
   &__buttons {
-    @include flex(15px);
+    @include utils.flex(15px);
   }
 }
