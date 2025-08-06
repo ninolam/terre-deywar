@@ -1,0 +1,41 @@
+@use 'utils';
+
+.CircuitCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  &__flexItems {
+    width: 100%;
+    @include utils.flexBetween();
+    align-items: flex-end;
+    @include utils.breakpoint(mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  &__title {
+    color: utils.$lightbrown;
+    @include utils.title(50px, 16px);
+  }
+  &__description {
+    color: utils.$lightbrown;
+    @include utils.text(20px, 7px);
+  }
+  .Button {
+    @include utils.breakpoint(mobile) {
+      padding: 3px 10px;
+      font-size: 9px;
+      border-radius: 6px;
+    }
+  }
+}

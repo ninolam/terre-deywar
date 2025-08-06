@@ -1,3 +1,5 @@
+@use './variables';
+
 /***********************************************
 FONTS
 ***********************************************/
@@ -134,10 +136,12 @@ Breakpoints
 }
 
 @mixin container {
-  max-width: $containerMaxWidth;
+  max-width: variables.$containerMaxWidth;
   width: 100%;
   margin: 0 auto;
+  padding: 100px 0;
   @include breakpoint(mediumDesktop) {
+    padding: 50px 0;
     max-width: 90%;
   }
 }

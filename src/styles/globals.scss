@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
-@import './utils/variables.scss';
-@import './utils/mixins.scss';
-@import './common/Header.scss';
-@import './common/Button.scss';
-@import './common/Footer.scss';
+@use 'utils';
+@use './common/Header';
+@use './common/Button';
+@use './common/Footer';
+@use './common/cards/CircuitCard';
 
 /* Home */
-@import './home/Home.scss';
+@use './home/Home';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 html,
 body {
@@ -30,7 +30,7 @@ p,
 span,
 a,
 button {
-  @include text();
+  @include utils.text();
 }
 
 h1,
@@ -39,11 +39,29 @@ h3,
 h4,
 h5,
 h6 {
-  @include title();
+  @include utils.title();
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.CircuitSlider__swiper {
+  height: 580px;
+  @include utils.breakpoint(smallDesktop) {
+    height: 440px!important;
+  }
+  @include utils.breakpoint(tablet) {
+    height: 300px!important;
+  }
+  @include utils.breakpoint(mobile) {
+    height: 180px!important;
+  }
 }

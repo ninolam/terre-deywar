@@ -1,14 +1,17 @@
+@use 'utils';
+
 .Button {
-  background-color: $buttonColor;
-  color: $darkbrown;
+  background-color: utils.$buttonColor;
+  color: utils.$darkbrown;
   padding: 10px 20px;
   border-radius: 12px;
-  font-size: $fontSizeSmall;
+  font-size: utils.$fontSizeSmall;
   outline: none;
   border: none;
   display: inline-flex;
+  cursor: pointer;
   &--transparent {
-    background-color: $buttonTransparent;
+    background-color: utils.$buttonTransparent;
   }
 
   &--header {
@@ -26,7 +29,7 @@
   }
 
   &--whiteSand {
-    background-color: $backgroundPrimary;
-    color: $darkbrown;
+    background-color: utils.$backgroundPrimary;
+    color: utils.$darkbrown;
   }
 }

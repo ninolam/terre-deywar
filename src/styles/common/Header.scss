@@ -1,42 +1,45 @@
+@use 'utils';
+
 .Header {
-  height: $headerHeight;
+  height: utils.$headerHeight;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
   &--background {
-    background-color: $backgroundPrimary;
+    background-color: utils.$backgroundPrimary;
     transition: background-color 0.5s ease;
     .Header__link {
-      color: $darkbrown;
+      color: utils.$darkbrown;
     }
   }
 
-  @include breakpoint(mobile) {
-    height: $headerHeightMobile;
+  @include utils.breakpoint(mobile) {
+    height: utils.$headerHeightMobile;
   }
   &__container {
     height: 100%;
-    @include container();
-    @include flexBetween();
+    padding: 0!important;
+    @include utils.container();
+    @include utils.flexBetween();
   }
 
   &__logo {
     width: 90px;
     height: 90px;
-    @include breakpoint(mobile) {
+    @include utils.breakpoint(mobile) {
       width: 40px;
       height: 40px;
     }
   }
 
   &__links {
-    @include flex(10rem);
+    @include utils.flex(10rem);
   }
 
   &__link {
-    font-size: $fontSizeRegular;
-    color: $lightbrown;
+    font-size: utils.$fontSizeRegular;
+    color: utils.$lightbrown;
   }
 }

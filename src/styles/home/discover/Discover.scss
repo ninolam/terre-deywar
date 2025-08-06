@@ -1,10 +1,12 @@
+
+@use 'utils';
+
 .Discover {
-  background-color: $backgroundPrimary;
-  font-size: $fontSizeSmall;
-  color: $darkbrown;
-  padding: $sectionPadding;
+  background-color: utils.$backgroundPrimary;
+  font-size: utils.$fontSizeSmall;
+  color: utils.$darkbrown;
   &__container {
-    @include container();
+    @include utils.container();
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +23,7 @@
     grid-column-gap: 50px;
     grid-row-gap: 0px;
     margin: 50px 0;
-    @include breakpoint(mobile) {
+    @include utils.breakpoint(mobile) {
       display: flex;
       flex-direction: column;
       gap: 10px;

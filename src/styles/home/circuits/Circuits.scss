@@ -1,0 +1,24 @@
+@use 'utils';
+@use './CircuitsSlider';
+
+.Circuits {
+  background-color: utils.$backgroundPrimary;
+  &__container {
+    @include utils.container();
+  }
+  &__infos {
+    @include utils.flex(60px);
+    @include utils.breakpoint(mobile) {
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+  &__title,
+  &__description {
+    flex: 1;
+    color: utils.$darkbrown;
+  }
+  &__slider {
+    margin-top: 50px;
+  }
+}
