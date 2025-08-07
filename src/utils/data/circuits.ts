@@ -6,16 +6,19 @@ export const circuits = [
   {
     title: 'TADRAT ROUGE',
     description: 'Touareg, music, bivouac',
+    longDescription: 'Ce circuit vous permettra de découvrir les merveilles du désert algérien. Vous pourrez profiter de la beauté du désert, des paysages et des activités que nous vous proposons.',
     image: '/images/section-circuits/image-circuit-2.jpg',
   },
   {
     title: 'IHRIR, ESSENDILENE Bivouac',
     description: 'Touareg, music, bivouac',
+    longDescription: 'Ce circuit vous permettra de découvrir les merveilles du désert algérien. Vous pourrez profiter de la beauté du désert, des paysages et des activités que nous vous proposons.',
     image: '/images/section-circuits/image-circuit-1.jpg',
   },
   {
     title: 'Tamanrasset',
     description: 'Touareg, music, bivouac',
+    longDescription: 'Ce circuit vous permettra de découvrir les merveilles du désert algérien. Vous pourrez profiter de la beauté du désert, des paysages et des activités que nous vous proposons.',
     image: '/images/section-circuits/image-circuit-3.jpg',
   },
 ];

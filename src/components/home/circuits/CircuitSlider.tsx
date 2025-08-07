@@ -76,7 +76,7 @@ const CircuitSlider = ({ cards }: { cards: Card[] }) => {
         {cards.map((card, index) => {
           return (
             <SwiperSlide key={card.title} onClick={() => swiperRef.current.slideTo(index)} >
-              <CircuitCard card={card} withButton={index === activeSlide} />
+              <CircuitCard circuit={card} withButton={index === activeSlide} />
             </SwiperSlide>
           );
         })}
