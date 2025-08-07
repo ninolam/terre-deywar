@@ -1,0 +1,53 @@
+@use 'utils';
+
+.CircuitsIntro {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+
+  &__container {
+    align-items: center;
+    height: 100%;
+
+    @include utils.flex(40px);
+    @include utils.container();
+    @include utils.breakpoint(mobile) {
+      flex-direction: column;
+      gap: 50px;
+      height: 80%;
+      align-items: normal;
+      padding-top: 132px;
+    }
+  }
+  &__infos {
+    flex: 1;
+
+    @include utils.flex(15px, column);
+    @include utils.breakpoint(mobile) {
+      flex: none;
+    }
+  }
+  &__buttons {
+    @include utils.flex(10px);
+  }
+  &__title,
+  &__text {
+    color: utils.$lightbrown;
+  }
+  &__separator {
+    width: 1px;
+    height: 20%;
+    background-color: white;
+    margin: auto;
+
+    @include utils.breakpoint(mobile) {
+      height: 1px;
+      width: 20%;
+      margin: 0;
+      flex: none;
+    }
+  }
+}

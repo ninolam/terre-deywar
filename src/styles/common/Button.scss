@@ -24,6 +24,15 @@
       background-color: utils.$buttonColor;
       color: utils.$darkbrown;
     }
+    @include utils.breakpoint(mobile) {
+      display: none;
+    }
+    &--mobile {
+      display: none;
+      @include utils.breakpoint(mobile) {
+        display: block;
+      }
+    }
   }
 
   &--white20 {

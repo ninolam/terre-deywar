@@ -100,7 +100,7 @@ Breakpoints définis pour une expérience optimale :
 - Mobile : ≤ 767px
 - Tablet : ≤ 1023px
 - Small Desktop : ≤ 1279px
-- Medium Desktop : ≤ 1414px
+- Medium Desktop : ≤ 1440px
 
 ## 🔧 Scripts de Développement
 
