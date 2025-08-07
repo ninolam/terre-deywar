@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { footerBlocs } from '@/utils/data/home';
+import { footerBlocs } from '@/utils/data/layout';
 
 const Footer = () => {
   return (

@@ -1,6 +1,6 @@
 import Reservation from '@/components/circuits/Reservation';
 
-const HomeCircuits = () => {
+const Circuits = () => {
   return (
     <>
       <Reservation />
@@ -8,4 +8,4 @@ const HomeCircuits = () => {
   );
 };
 
-export default HomeCircuits;
+export default Circuits;
