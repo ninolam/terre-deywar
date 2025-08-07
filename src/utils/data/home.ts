@@ -1,3 +1,18 @@
+export const headerLinks = [
+  {
+    label: 'Nos circuits',
+    href: '/circuits',
+  },
+  {
+    label: 'Notre histoire',
+    href: '/about',
+  },
+  {
+    label: 'Contactez-nous',
+    href: '/contact',
+  },
+];
+
 export const footerBlocs = [
   {
     title: 'Liens Utiles',
@@ -49,21 +64,6 @@ export const footerBlocs = [
         label: "Condition d'Utilisation",
       },
     ],
-  },
-];
-
-export const headerLinks = [
-  {
-    label: 'Nos circuits',
-    href: '/circuits',
-  },
-  {
-    label: 'Notre histoire',
-    href: '/about',
-  },
-  {
-    label: 'Contactez-nous',
-    href: '/contact',
   },
 ];
 

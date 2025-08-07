@@ -1,55 +1,39 @@
 import React from 'react';
 import Button from '@/components/common/Button';
-import { CalendarClock } from 'lucide-react';
-import { ClipboardPen } from 'lucide-react';
-import { Plane } from 'lucide-react';
+import { reservations, iconMap } from '@/utils/data/circuits';
 
 const Reservation = () => {
   return (
     <section className='Reservation'>
       <div className='Reservation__container'>
         <div className='Reservation__presentation'>
-          <p className='Reservation__text'>Réservez</p>
-          <h1 className='Reservation__title'>
-            Comment réserver votre circuit avec nous
-          </h1>
-          <p className='Reservation__text'>
+          <p>Réservez</p>
+          <h1>Comment réserver votre circuit avec nous</h1>
+          <p>
             Réserver un circuit avec Terre d&apos;Eywar est simple et rapide.
             Suivez notre processus en quelques étapes pour une expérience
             inoubliable.
-          </p>{' '}
+          </p>
         </div>
         <div className='Reservation__items'>
-          <div className='Reservation__item'>
-            <CalendarClock className='Reservation__icon' />
-            <h1 className='Reservation__title'>
-              Étapes de réservation de votre circuit
-            </h1>
-            <p className='Reservation__text'>
-              Choisissez votre circuit et vérifiez les disponibilités. Je vous
-              contacterai rapidement afin de vous fournir les détails.
-            </p>
-          </div>
-          <div className='Reservation__item'>
-            <ClipboardPen className='Reservation__icon' />
-            <h1 className='Reservation__title'>
-              Préparatifs avant votre départ
-            </h1>
-            <p className='Reservation__text'>
-              Assurez-vous d&apos;avoir tous les documents nécessaires.
-            </p>
-          </div>
-          <div className='Reservation__item'>
-            <Plane className='Reservation__icon' />
-            <h1 className='Reservation__title'>Profiter de votre expérience</h1>
-            <p className='Reservation__text'>
-              Profitez de votre expérience, notre équipe organise tout, les
-              repas, les sites, le transport,
-            </p>
-          </div>
+          {reservations.map((reservation) => {
+            const Icons = iconMap[reservation.icon as keyof typeof iconMap];
+            return (
+              <div className='Reservation__item' key={reservation.title}>
+                <Icons
+                  className='Reservation__icon'
+                  strokeWidth={1}
+                  width={150}
+                  height={150}
+                />
+                <h1 className='Reservation__title'>{reservation.title}</h1>
+                <p className='Reservation__text'>{reservation.text}</p>
+              </div>
+            );
+          })}
         </div>
         <div className='Reservation__button'>
-          <Button text='Je réserve une date !' classNameModifier='whiteSand' />
+          <Button text='Je réserve une date !' />
         </div>
       </div>
     </section>

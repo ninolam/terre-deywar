@@ -16,4 +16,3 @@ export const groupImagesByThree = () => {
   }
   return groups;
 };
-

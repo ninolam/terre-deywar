@@ -1,5 +1,5 @@
 'use client';
-import { groupImagesByThree } from '@/utils/functions/home';
+import { groupImagesByThree } from '@/utils/functions';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
