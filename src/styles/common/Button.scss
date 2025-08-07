@@ -1,6 +1,9 @@
 @use 'utils';
 
 .Button {
+  @include utils.breakpoint(mobile) {
+    padding: 6px 14px;
+  }
   background-color: utils.$buttonColor;
   color: utils.$darkbrown;
   padding: 10px 20px;

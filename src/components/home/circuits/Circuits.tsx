@@ -1,5 +1,5 @@
 import CircuitSlider from '@/components/home/circuits/CircuitSlider';
-import { circuits } from '@/utils/data';
+import { circuits } from '@/utils/data/circuits';
 
 const Circuits = () => {
   return (
@@ -10,7 +10,10 @@ const Circuits = () => {
             Découvrez nos circuits uniques dans le désert ALGÉRIEN
           </h2>
           <p className='Circuits__description'>
-            Nos circuits vous plongent au cœur de la culture touareg. Explorez des paysages à couper le souffle et vivez des expériences inoubliables. Chaque circuit est conçu pour vous offrir une immersion totale dans la magie du désert algérien.
+            Nos circuits vous plongent au cœur de la culture touareg. Explorez
+            des paysages à couper le souffle et vivez des expériences
+            inoubliables. Chaque circuit est conçu pour vous offrir une
+            immersion totale dans la magie du désert algérien.
           </p>
         </div>
         <div className='Circuits__slider'>

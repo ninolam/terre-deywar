@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Button from './Button';
-import { headerLinks } from '@/utils/data';
+import { headerLinks } from '@/utils/data/layout';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,10 +12,10 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
     };
-    
+
     // Set initial scroll state
     handleScroll();
-    
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {

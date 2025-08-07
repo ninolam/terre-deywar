@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@/components/common/Button';
 import { ChevronRight } from 'lucide-react';
-import { cardsDiscover } from '@/utils/data';
+import { cardsDiscover } from '@/utils/data/home';
 import Card from './Card';
 
 const Discover = () => {

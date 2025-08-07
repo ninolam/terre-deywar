@@ -1,0 +1,48 @@
+@use 'utils';
+
+.Reservation {
+  background-color: utils.$backgroundPrimary;
+  color: utils.$darkbrown;
+
+  &__container {
+    @include utils.container();
+    @include utils.flex(50px);
+    flex-direction: column;
+    align-items: center;
+  }
+  &__presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  &__items {
+    @include utils.flex(50px);
+    @include utils.breakpoint(mobile) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  &__item {
+    text-align: center;
+    @include utils.flex(25px);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @include utils.breakpoint(mobile) {
+      gap: 5px;
+    }
+  }
+  &__icon {
+    @include utils.breakpoint(mobile) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &__title {
+    @include utils.title(25px, 15px);
+  }
+  &__text {
+    @include utils.text(20px, 10px);
+  }
+}
