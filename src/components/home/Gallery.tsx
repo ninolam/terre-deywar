@@ -26,7 +26,7 @@ const Gallery = () => {
             <Image
               className={`Gallery__image Gallery__image--${imageIndex + 1}`}
               key={imageIndex}
-              src={`/images/home/section-gallery/${imageName}`}
+              src={`/images/section-gallery/${imageName}`}
               alt={`Some Pictures ${imageIndex + 1}`}
               width={350}
               height={200}
