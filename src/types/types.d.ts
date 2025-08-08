@@ -1,6 +1,6 @@
 export type Circuit = {
   title: string;
   description: string;
-  longDescription?: string;
+  mainDescription?: string;
   image: string;
-}
+};

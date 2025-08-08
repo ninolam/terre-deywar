@@ -6,30 +6,38 @@ export const circuits = [
   {
     slug: "terre-d'eywar-tadrat",
     title: 'TADRAT ROUGE',
-    subtitle: 'Aventure',
     description: 'Touareg, music, bivouac',
-    mainTitle: 'EXPLOREZ LES MERVEILLES DE DJANET AVEC LE CIRCUIT TADRAT',
     mainDescription:
-      'Ce circuit vous emmène à travers des paysages époustouflants, où vous découvrirez la culture fascinante des Touaregs. Participez à des activités immersives, belles que des concerts de musiques du désert et des visites de villages traditionnels.',
+      'Ce circuit vous transporte dans l’univers spectaculaire de la Tadrart, avec ses dunes rouges, ses arches naturelles et ses peintures rupestres millénaires. Plongez dans un décor digne d’un autre monde et vivez la magie du désert à chaque pas.',
     image: '/images/section-circuits/image-circuit-2.jpg',
+
+    subtitle: 'Aventure',
+    mainTitle:
+      "Partez à l'aventure dans les paysages spectaculaires de la Tadrart",
+    included: 'Ce qui est inclus :',
+    support: {
+      label:
+        'Prise en charge:\n• Vol aller-retour Alger/Djanet\n• Excursions en 4x4\n• Transferts aéroport\n• Pension complète : petit déjeuner, déjeuner, goûter et dîner\n' +
+        'Accompagnement:\n• Cuisinier\n• Guide touristique\n• Musicien\n' +
+        'Au programme :\n• Beach Volley\n• Méditation\n• Site historique patrimoine mondial de l’UNESCO\n' +
+        'Bivouac:\n• Nous fournissons : matelas, couvertures et tentes',
+    },
+
     locations: {
-      title: 'LIEUX',
+      title: 'DJANET',
       description:
-        "Visitez les dunes de sable et les oasis, les peintures rupestres datant de 10000 ans et plein d'autres",
+        "Explorez les paysages lunaires du Tassili n'Ajjer, les oasis cachées, et les peintures rupestres vieilles de plus de 10 000 ans.",
     },
     activities: {
       title: 'ACTIVITÉS',
       description:
-        'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
+        'Volley ball, randonnées désertique et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
     },
     stats: {
       duration: { value: '8', unit: 'jours', label: 'Durée du circuit' },
-      distance: { value: '150', unit: 'km', label: 'Distance parcourue' },
-      participants: { value: '12', unit: '', label: 'Participants maximum' },
-      price: { value: '450', unit: 'euros', label: 'à partir de 450 euros' },
+      participants: { value: '15', unit: '', label: 'Participants maximum' },
+      price: { value: '550', unit: 'euros', label: 'à partir de 550 euros' },
     },
-    circuitDescription:
-      'Notre circuit offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
     gallery: {
       title: 'PLUS DE PHOTOS DU CIRCUIT',
       description:
@@ -38,17 +46,28 @@ export const circuits = [
   },
   {
     slug: "terre-d'eywar-ihrir",
-    title: 'IHRIR, ESSENDILENE Bivouac',
-    subtitle: 'Aventure',
+    title: 'IHRIR, ESSENDILENE',
     description: 'Touareg, music, bivouac',
-    mainTitle: 'EXPLOREZ LES MERVEILLES DE DJANET AVEC LE CIRCUIT IHRIR',
     mainDescription:
-      'Ce circuit vous emmène à travers des paysages époustouflants, où vous découvrirez la culture fascinante des Touaregs. Participez à des activités immersives, belles que des concerts de musiques du désert et des visites de villages traditionnels.',
+      "Ce circuit vous mène jusqu’à l’oasis d'Ihrir, véritable écrin de verdure niché entre falaises et bassins naturels. Découvrez un lieu paisible, entre nature luxuriante et vestiges rupestres, au cœur d’un désert surprenant de vie.",
     image: '/images/section-circuits/image-circuit-1.jpg',
+
+    subtitle: 'Aventure',
+    mainTitle:
+      "Découvrez l'oasis cachée d'Ihrir, entre falaises et sources naturelles",
+    included: 'Ce qui est inclus :',
+    support: {
+      label:
+        'Prise en charge:\n• Vol aller-retour Alger/Djanet\n• Excursions en 4x4\n• Transferts aéroport\n• Pension complète : petit déjeuner, déjeuner, goûter et dîner\n' +
+        'Accompagnement:\n• Cuisinier\n• Guide touristique\n• Musicien\n' +
+        'Au programme :\n• Randonnées\n• Méditation\n• Visite de l’oasis d’Essendilène et baignade naturelle\n' +
+        'Bivouac:\n• Nous fournissons : matelas, couvertures et tentes',
+    },
+
     locations: {
-      title: 'LIEUX',
+      title: 'IHRIR',
       description:
-        "Visitez les dunes de sable et les oasis, les peintures rupestres datant de 10000 ans et plein d'autres",
+        'Découvrez un paradis secret : palmeraie luxuriante, bassins naturels, falaises sculptées, et scènes de vie gravées dans la roche.',
     },
     activities: {
       title: 'ACTIVITÉS',
@@ -56,13 +75,10 @@ export const circuits = [
         'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
     },
     stats: {
-      duration: { value: '10', unit: 'jours', label: 'Durée du circuit' },
-      distance: { value: '200', unit: 'km', label: 'Distance parcourue' },
+      duration: { value: '8', unit: 'jours', label: 'Durée du circuit' },
       participants: { value: '15', unit: '', label: 'Participants maximum' },
-      price: { value: '500', unit: 'euros', label: 'à partir de 500 euros' },
+      price: { value: '550', unit: 'euros', label: 'à partir de 550 euros' },
     },
-    circuitDescription:
-      'Notre circuit offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
     gallery: {
       title: 'PLUS DE PHOTOS DU CIRCUIT',
       description:
@@ -72,16 +88,26 @@ export const circuits = [
   {
     slug: "terre-d'eywar-tamanrasset",
     title: 'TAMANRASSET',
-    subtitle: 'Aventure',
     description: 'Touareg, music, bivouac',
-    mainTitle: 'EXPLOREZ LES MERVEILLES DE DJANET AVEC LE CIRCUIT TAMANRASSET',
     mainDescription:
-      'Ce circuit vous emmène à travers des paysages époustouflants, où vous découvrirez la culture fascinante des Touaregs. Participez à des activités immersives, belles que des concerts de musiques du désert et des visites de villages traditionnels.',
+      'Ce circuit vous emmène à Tamanrasset, capitale du Sud, entre tradition touarègue et paysages grandioses du Hoggar. Partez à l’aventure jusqu’à l’Assekrem et vivez des moments forts au rythme des musiques et des légendes du désert.',
     image: '/images/section-circuits/image-circuit-3.jpg',
+
+    subtitle: 'Aventure',
+    mainTitle: 'Explorez Tamanrasset et les terres sacrées du Hoggar',
+    included: 'Ce qui est inclus :',
+    support: {
+      label:
+        'Prise en charge:\n• Vol aller-retour Alger/Tamanrasset\n• Excursions en 4x4\n• Transferts aéroport\n• Pension complète : petit déjeuner, déjeuner, goûter et dîner\n' +
+        'Accompagnement:\n• Cuisinier\n• Guide touristique\n• Musicien\n' +
+        'Au programme :\n• Randonnées dans l’Assekrem\n• Visite de l’ermitage du Père de Foucauld\n• Soirées musicales autour du feu\n' +
+        'Bivouac:\n• Nous fournissons : matelas, couvertures et tentes',
+    },
+
     locations: {
-      title: 'LIEUX',
+      title: 'TAMANRASSET',
       description:
-        "Visitez les dunes de sable et les oasis, les peintures rupestres datant de 10000 ans et plein d'autres",
+        'Partez à la rencontre du Hoggar, admirez le majestueux Assekrem, et plongez dans la culture touarègue au cœur du désert.',
     },
     activities: {
       title: 'ACTIVITÉS',
@@ -89,13 +115,10 @@ export const circuits = [
         'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
     },
     stats: {
-      duration: { value: '6', unit: 'jours', label: 'Durée du circuit' },
-      distance: { value: '120', unit: 'km', label: 'Distance parcourue' },
-      participants: { value: '10', unit: '', label: 'Participants maximum' },
-      price: { value: '350', unit: 'euros', label: 'à partir de 350 euros' },
+      duration: { value: '8', unit: 'jours', label: 'Durée du circuit' },
+      participants: { value: '15', unit: '', label: 'Participants maximum' },
+      price: { value: '550', unit: 'euros', label: 'à partir de 550 euros' },
     },
-    circuitDescription:
-      'Notre circuit offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
     gallery: {
       title: 'PLUS DE PHOTOS DU CIRCUIT',
       description:
