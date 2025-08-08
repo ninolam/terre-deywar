@@ -29,7 +29,7 @@
 
   &__title {
     color: utils.$lightbrown;
-    @include utils.title(56px, 32px, -1.5px);
+    @include utils.title(56px, 32px);
     text-align: center;
   }
 
