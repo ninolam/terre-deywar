@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import Button from '../common/Button';
+import Button from '../../common/Button';
 import { circuits } from '@/utils/data/circuits';
-import Overlay from '../common/Overlay';
+import Overlay from '../../common/Overlay';
 import IntroSlider from './IntroSlider';
 
 const Intro = () => {

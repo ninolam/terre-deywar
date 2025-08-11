@@ -3,6 +3,7 @@ import Button from '@/components/common/Button';
 import { ChevronRight } from 'lucide-react';
 import { cardsDiscover } from '@/utils/data/home';
 import Card from './Card';
+import Slider from '@/components/common/slider/Slider';
 
 const Discover = () => {
   return (
@@ -14,7 +15,6 @@ const Discover = () => {
         <p className='Discover__description'>
           Avec Terre d&apos;Eywar, chaque voyage commence par une réservation
           simple et rapide.
-          <br />
           Vous serez ensuite guidé à travers une immersion totale dans la
           culture Touareg.
         </p>
@@ -29,6 +29,15 @@ const Discover = () => {
             />
           ))}
         </div>
+
+        <div className='Discover__slider'>
+          <Slider
+            items={cardsDiscover}
+            context='discoverCard'
+            classNameModifier='discover'
+          />
+        </div>
+
         <div>
           <Button text='Réserver' />
           <Button

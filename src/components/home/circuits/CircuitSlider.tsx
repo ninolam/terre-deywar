@@ -5,9 +5,6 @@ import { Autoplay, EffectCoverflow, Navigation } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
-import 'swiper/scss/autoplay';
 import 'swiper/scss/effect-coverflow';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import CircuitCard from '@/components/common/cards/CircuitCard';
@@ -28,7 +25,7 @@ const CircuitSlider = ({ cards }: { cards: Card[] }) => {
     <div className='CircuitSlider'>
       <Swiper
         className='CircuitSlider__swiper'
-        modules={[Autoplay, Navigation, EffectCoverflow]}
+        modules={[EffectCoverflow]}
         ref={swiperRef}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
@@ -37,7 +34,7 @@ const CircuitSlider = ({ cards }: { cards: Card[] }) => {
           const index = swiper.isEnd ? cards.length - 1 : swiper.activeIndex;
           setActiveSlide(index);
         }}
-
+        watchSlidesProgress={true}
         effect='coverflow'
         coverflowEffect={{
           rotate: 0,

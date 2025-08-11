@@ -3,10 +3,9 @@
 
 .Circuits {
   background-color: utils.$backgroundPrimary;
-  &__container {
-    @include utils.container();
-  }
+      padding: 50px 0;
   &__infos {
+    @include utils.containerWithoutPadding();
     @include utils.flex(60px);
     @include utils.breakpoint(mobile) {
       gap: 10px;

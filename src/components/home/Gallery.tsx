@@ -7,11 +7,11 @@ const Gallery = () => {
   const [randomNumber, setRandomNumber] = useState(0);
   const imageGroups = groupImagesByThree();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setRandomNumber(Math.floor(Math.random() * imageGroups.length));
-    }, 2000);
-  }, [randomNumber, imageGroups.length]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setRandomNumber(Math.floor(Math.random() * imageGroups.length));
+  //   }, 2000);
+  // }, [randomNumber, imageGroups.length]);
 
   return (
     <section className='Gallery'>

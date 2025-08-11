@@ -1,7 +1,7 @@
 @use 'utils';
 
 .Reservation {
-  background-color: utils.$backgroundPrimary;
+  background-color: utils.$backgroundSecondary;
   color: utils.$darkbrown;
 
   &__container {

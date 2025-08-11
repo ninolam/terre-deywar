@@ -13,6 +13,9 @@
     .Header__link {
       color: utils.$darkbrown;
     }
+    .Header__menu {
+      color: utils.$darkbrown;
+    }
   }
 
   @include utils.breakpoint(mobile) {
@@ -26,8 +29,8 @@
   }
 
   &__logo {
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     @include utils.breakpoint(mobile) {
       width: 40px;
       height: 40px;
@@ -35,19 +38,21 @@
   }
 
   &__menu {
+    color: utils.$lightbrown;
     display: none;
     @include utils.breakpoint(mobile) {
       display: block;
     }
   }
   &__nav {
+    width: 60%;
     @include utils.breakpoint(mobile) {
       display: none;
     }
   }
 
   &__links {
-    @include utils.flex(10rem);
+    @include utils.flexBetween();
   }
 
   &__link {

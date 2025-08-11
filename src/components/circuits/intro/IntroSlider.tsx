@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import CircuitCard from '../common/cards/CircuitCard';
+import CircuitCard from '../../common/cards/CircuitCard';
 import 'swiper/scss';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
@@ -22,10 +22,26 @@ const IntroSlider = ({ circuits, setActiveSlide, activeSlide }: { circuits: any[
         onSlideChange={(swiper) => {
           setActiveSlide(swiper.realIndex);
         }}
+        watchSlidesProgress={true}
         loop={true}
         initialSlide={1}
+        className='CircuitsIntroSlider__swiper'
+        breakpoints={{
+          360: {
+            slidesPerView: 2,
+          },
+          580: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1440: {
+            slidesPerView: 3,
+          },
+        }}
       >
-        {circuits.map((circuit) => {
+        {circuits.map((circuit, index) => {
           return (
             <SwiperSlide
               key={circuit.title}

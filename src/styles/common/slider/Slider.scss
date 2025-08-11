@@ -1,0 +1,153 @@
+@use '../../utils';
+
+.Slider {
+  padding: 60px 0;
+  background-color: utils.$lightbrown;
+
+  &__title, &__description {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__swiper-container {
+    width: 100%;
+    height: 640px;
+    position: relative;
+    
+    @include utils.breakpoint(tablet) {
+      height: 500px;
+    }
+    @include utils.breakpoint(mobile) {
+      height: 320px;
+      .Discover__slider & {
+        height: 100%;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: utils.$darkbrown !important;
+  }
+
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding-bottom: 30px;
+
+    &.swiper-initialized {
+      opacity: 1;
+    }
+  }
+
+  &__slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &__dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: utils.$backgroundTertiary;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &--active {
+        background-color: utils.$darkbrown;
+      }
+    }
+  }
+
+  &__navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    &__arrow {
+      position: absolute;
+      z-index: 1000;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      pointer-events: auto;
+      color: utils.$darkbrown;
+
+      @include utils.breakpoint(mobile) {
+        width: 40px;
+        height: 40px;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        transform: translateY(-50%) scale(1.1);
+      }
+
+      &:active {
+        transform: translateY(-50%) scale(0.95);
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+
+        @include utils.breakpoint(mobile) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &--prev {
+        left: -25px;
+
+        @include utils.breakpoint(mobile) {
+          left: -20px;
+        }
+      }
+
+      &--next {
+        right: -25px;
+
+        @include utils.breakpoint(mobile) {
+          right: -20px;
+        }
+      }
+    }
+  }
+}
