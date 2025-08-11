@@ -1,0 +1,12 @@
+@use 'utils';
+
+.CircuitsImages {
+  background-color: utils.$lightbrown;
+  &__container {
+    @include utils.container();
+  }
+  &__title,
+  &__description {
+    text-align: center;
+  }
+}

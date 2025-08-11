@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
-const Gallery = () => {
-  return (
-    <section>
-      <div>Hello</div>
-    </section>
-  );
-};
+// const Gallery = () => {
+//   return (
+//     <section>
+//       <div>Hello</div>
+//     </section>
+//   );
+// };
 
-export default Gallery;
+// export default Gallery;

@@ -1,4 +1,8 @@
+/* Circuit Presentation*/
+@use './circuits/Reservation';
 @use './circuits/intro/Intro';
 @use './circuits/intro/IntroSlider';
 @use './circuits/Images';
-@use './circuits/Reservation';
+
+/* Circuit Detail*/
+@use './circuits/circuit/Circuit';
