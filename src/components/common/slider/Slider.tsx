@@ -26,25 +26,25 @@ const Slider: React.FC<SliderProps> = ({
 
   const renderItem = (
     context: string,
-    item: string | { title: string; text: string; image: string }
+    item: string | { title: string; text: string; image: string },
   ) => {
     switch (context) {
-      case 'image':
+    case 'image':
+      return (
+        <div
+          className='Slider__image'
+          style={{ backgroundImage: `url(${item})` }}
+        />
+      );
+    case 'discoverCard':
+      if (typeof item === 'object') {
         return (
-          <div
-            className='Slider__image'
-            style={{ backgroundImage: `url(${item})` }}
-          />
+          <Card title={item.title} image={item.image} text={item.text} />
         );
-      case 'discoverCard':
-        if (typeof item === 'object') {
-          return (
-            <Card title={item.title} image={item.image} text={item.text} />
-          );
-        }
-        return null;
-      default:
-        return null;
+      }
+      return null;
+    default:
+      return null;
     }
   };
 
