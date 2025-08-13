@@ -1,7 +1,7 @@
 'use client';
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectCoverflow, Navigation } from 'swiper/modules';
+import { EffectCoverflow } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/scss';
@@ -69,6 +69,7 @@ const CircuitSlider = ({ cards }: { cards: Card[] }) => {
         style={{
           height: '520px',
         }}
+        loop={true}
       >
         {cards.map((card, index) => {
           return (

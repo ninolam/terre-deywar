@@ -9,7 +9,6 @@ const Images = () => {
     '/images/section-circuits/image-circuit-1.jpg',
     '/images/section-circuits/image-circuit-2.jpg',
     '/images/section-circuits/image-circuit-3.jpg',
-
   ];
   return (
     <section className='CircuitsImages'>
@@ -22,7 +21,6 @@ const Images = () => {
           classNameModifier='dark'
         />
       </div>
-
     </section>
   );
 };
