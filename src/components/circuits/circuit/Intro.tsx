@@ -8,11 +8,9 @@ const Intro = () => {
       <div className='Intro-circuit__container'>
         <div className='Intro-circuit__container-left'>
           <div className='Intro-circuit__container-top'>
-            <p className='Intro-circuit__'>Aventure</p>
-            <h1 className='Intro-circuit__'>
-              Explorez les merveilles de djanet avec le circuit IHRIR
-            </h1>
-            <p className='Intro-circuit__'>
+            <p>Aventure</p>
+            <h1>Explorez les merveilles de djanet avec le circuit IHRIR</h1>
+            <p>
               Ce circuit vous emmène à travers des paysages époustouflants, où
               vous découvrirez la culture fascinante des Touaregs. Participez à
               des activités immersives, telles que des concerts de musiciens du
@@ -20,12 +18,14 @@ const Intro = () => {
             </p>
           </div>
           <div className='Intro-circuit__container-bottom'>
-            <div className='Intro-circuit__location'>
+            <div>
               <h2>Lieux</h2>
-              Visitez les dunes de sable et les oasis, les peintures rupestres
-              datant de 10000 ans et pleins d’autres.
+              <p>
+                Visitez les dunes de sable et les oasis, les peintures rupestres
+                datant de 10000 ans et pleins d’autres.
+              </p>
             </div>
-            <div className='Intro-circuit__activity'>
+            <div>
               <h2>Activités</h2>
               <p>
                 Volley ball, randonnées et immersion culturelle, jeux de
