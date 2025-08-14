@@ -2,6 +2,7 @@ import { CalendarClock } from 'lucide-react';
 import { ClipboardPen } from 'lucide-react';
 import { Plane } from 'lucide-react';
 
+
 export const circuits = [
   {
     slug: "terre-d'eywar-tadrat",
@@ -226,5 +227,24 @@ export const reservations = [
     icon: 'Plane',
     title: 'Profiter de votre expérience',
     text: 'Profitez de votre expérience, notre équipe organise tout, les repas, les sites, le transport.',
+  },
+];
+
+export const dataStatistics = [
+  {
+    title : '15',
+    text : '15 places disponible',
+  },
+  {
+    title : '10',
+    text : 'Durée du circuit : 10 jours',
+  },
+  {
+    title : '550',
+    text : 'Tarif : 550, 00 €*',
+  },
+  {
+    title : '20',
+    text : 'Distance parcourus : 20 Km',
   },
 ];

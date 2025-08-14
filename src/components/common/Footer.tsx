@@ -24,50 +24,6 @@ const Footer = () => {
         </Link>
         <div className='Footer__copyright'>
           <p>© 2025 Terre d&apos;Eywar. Tous droits réservés.</p>
-          {/* <ul className="Footer__socials" role="list">
-            <li>
-              <Link
-                href="https://instagram.com/"
-                className="social-icon"
-                aria-label="Instagram"
-              >
-                <Image
-                  src="../public/icon/instragram.png"
-                  alt="logo__instragram"
-                  width={15}
-                  height={15}
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://tiktok.com/"
-                className="social-icon"
-                aria-label="TikTok"
-              >
-                <Image
-                  src="../public/icon/tiktok.png"
-                  alt="logo__tiktok"
-                  width={15}
-                  height={15}
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://linkedin.com/company/"
-                className="social-icon"
-                aria-label="LinkedIn"
-              >
-                <Image
-                  src="../public/icon/linkedin.png"
-                  alt="logo__linkedin"
-                  width={15}
-                  height={15}
-                />
-              </Link>
-            </li>
-          </ul> */}
         </div>
       </section>
     </footer>

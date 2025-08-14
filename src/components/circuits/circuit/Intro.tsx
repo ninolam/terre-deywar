@@ -2,14 +2,14 @@ import React from 'react';
 import Button from '@/components/common/Button';
 import Image from 'next/image';
 
-const Intro = () => {
+const CircuitIntro = () => {
   return (
-    <section className='Intro-circuit'>
-      <div className='Intro-circuit__container'>
-        <div className='Intro-circuit__container-left'>
-          <div className='Intro-circuit__container-top'>
+    <section className='CircuitIntro'>
+      <div className='CircuitIntro__container'>
+        <div className='CircuitIntro__container-left'>
+          <div className='CircuitIntro__container-top'>
             <p>Aventure</p>
-            <h1>Explorez les merveilles de djanet avec le circuit IHRIR</h1>
+            <h1>Explorez les merveilles de djanet avec le circuit TADRAT</h1>
             <p>
               Ce circuit vous emmène à travers des paysages époustouflants, où
               vous découvrirez la culture fascinante des Touaregs. Participez à
@@ -17,7 +17,7 @@ const Intro = () => {
               désert et des visites de villages traditionnels.
             </p>
           </div>
-          <div className='Intro-circuit__container-bottom'>
+          <div className='CircuitIntro__container-bottom'>
             <div>
               <h2>Lieux</h2>
               <p>
@@ -33,28 +33,28 @@ const Intro = () => {
               </p>
             </div>
           </div>
-          <div className='Intro-circuit__container-buttons'>
+          <div className='CircuitIntro__container-buttons'>
             <Button text='Voir les dates disponible de ce circuit' />
             <Button text='Voir plus de photos' />
           </div>
         </div>
-        <div className='Intro-circuit__container-right'>
+        <div className='CircuitIntro__gallery'>
           <Image
-            className='Intro-circuit__image-1'
+            className='CircuitIntro__top'
             src={'/images/0FC13B24-5FBC-47D1-BDC4-A2F4F74A01CD.jpg'}
             alt=''
             width={240}
             height={120}
           />
           <Image
-            className='Intro-circuit__image-2'
+            className='CircuitIntro__bottomLeft'
             src={'/images/0FC13B24-5FBC-47D1-BDC4-A2F4F74A01CD.jpg'}
             alt=''
             width={120}
             height={120}
           />
           <Image
-            className='Intro-circuit__image-3'
+            className='CircuitIntro__bottomRight'
             src={'/images/0FC13B24-5FBC-47D1-BDC4-A2F4F74A01CD.jpg'}
             alt=''
             width={120}
@@ -66,4 +66,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default CircuitIntro;

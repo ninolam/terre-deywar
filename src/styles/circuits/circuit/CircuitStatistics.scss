@@ -1,6 +1,6 @@
 @use 'utils';
 
-.Statistics-circuit {
+.CircuitStatistics {
   background-color: utils.$backgroundPrimary;
   color: utils.$darkbrown;
   padding: 25px 0;
@@ -17,7 +17,7 @@
     @include utils.flex(25px);
     flex-direction: column;
     width: 100%;
-    .Statistics-circuit__container-information {
+    .CircuitStatistics__container-information {
       font-size: 15px;
     }
   }
