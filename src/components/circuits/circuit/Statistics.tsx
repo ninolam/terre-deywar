@@ -6,8 +6,8 @@ const CircuitStatistics = () => {
   return (
     <section className='CircuitStatistics'>
       <div className='CircuitStatistics__container'>
-        <div className='CircuitStatistics__container-left'>
-          <p>Aventure</p>
+        <div className='CircuitStatistics__discover'>
+          <p className='CircuitStatistics__discover__label'>Aventure</p>
           <h1>Découvrez les chiffres clés de notre circuit</h1>
           <p>
             Notre circuit offre une expérience inoubliable à travers le désert
@@ -17,15 +17,15 @@ const CircuitStatistics = () => {
           <div>
             <Button text='Je réserve' />
           </div>
-          <p className='CircuitStatistics__container-information'>
+          <p className='CircuitStatistics__info'>
             *Le montant peut être amené à évoluer en fonction des dates.
           </p>
         </div>
-        <div className='CircuitStatistics__container-right'>
+        <div className='CircuitStatistics__stats'>
           {dataStatistics.map((stats) => (
-            <div key={stats.title}>
-              <h1>{stats.title}</h1>
-              <p>{stats.text}</p>
+            <div className='CircuitStatistics__stat' key={stats.title}>
+              <h1 className='CircuitStatistics__stat__title'>{stats.title}</h1>
+              <p className='CircuitStatistics__stat__text'>{stats.text}</p>
             </div>
           ))}
         </div>

@@ -6,9 +6,9 @@ const CircuitIntro = () => {
   return (
     <section className='CircuitIntro'>
       <div className='CircuitIntro__container'>
-        <div className='CircuitIntro__container-left'>
-          <div className='CircuitIntro__container-top'>
-            <p>Aventure</p>
+        <div className='CircuitIntro__details'>
+          <div className='CircuitIntro__explore'>
+            <p className='CircuitIntro__explore__label'>Aventure</p>
             <h1>Explorez les merveilles de djanet avec le circuit TADRAT</h1>
             <p>
               Ce circuit vous emmène à travers des paysages époustouflants, où
@@ -17,7 +17,7 @@ const CircuitIntro = () => {
               désert et des visites de villages traditionnels.
             </p>
           </div>
-          <div className='CircuitIntro__container-bottom'>
+          <div className='CircuitIntro__sections'>
             <div>
               <h2>Lieux</h2>
               <p>
@@ -33,33 +33,35 @@ const CircuitIntro = () => {
               </p>
             </div>
           </div>
-          <div className='CircuitIntro__container-buttons'>
+          <div className='CircuitIntro__actions'>
             <Button text='Voir les dates disponible de ce circuit' />
             <Button text='Voir plus de photos' />
           </div>
         </div>
         <div className='CircuitIntro__gallery'>
           <Image
-            className='CircuitIntro__top'
+            className='CircuitIntro__gallery__item CircuitIntro__gallery__item--large'
             src={'/images/0FC13B24-5FBC-47D1-BDC4-A2F4F74A01CD.jpg'}
             alt=''
             width={240}
             height={120}
           />
-          <Image
-            className='CircuitIntro__bottomLeft'
-            src={'/images/0FC13B24-5FBC-47D1-BDC4-A2F4F74A01CD.jpg'}
-            alt=''
-            width={120}
-            height={120}
-          />
-          <Image
-            className='CircuitIntro__bottomRight'
-            src={'/images/0FC13B24-5FBC-47D1-BDC4-A2F4F74A01CD.jpg'}
-            alt=''
-            width={120}
-            height={120}
-          />
+          <div className='CircuitIntro__gallery__item__row'>
+            <Image
+              className='CircuitIntro__gallery__item CircuitIntro__gallery__item--left'
+              src={'/images/0FC13B24-5FBC-47D1-BDC4-A2F4F74A01CD.jpg'}
+              alt=''
+              width={120}
+              height={120}
+            />
+            <Image
+              className='CircuitIntro__gallery__item CircuitIntro__gallery__item--right'
+              src={'/images/0FC13B24-5FBC-47D1-BDC4-A2F4F74A01CD.jpg'}
+              alt=''
+              width={120}
+              height={120}
+            />
+          </div>
         </div>
       </div>
     </section>

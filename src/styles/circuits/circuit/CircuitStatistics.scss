@@ -8,35 +8,37 @@
     @include utils.container();
     @include utils.flex(50px);
     align-items: center;
-    p:first-child {
-      font-size: 15px;
-      font-weight: bold;
+    @include utils.breakpoint(mobile) {
+      flex-direction: column;
     }
   }
-  &__container-left {
+  &__discover {
     @include utils.flex(25px);
     flex-direction: column;
     width: 100%;
-    .CircuitStatistics__container-information {
+    &__label {
       font-size: 15px;
+      font-weight: bold;
     }
   }
-  &__container-right {
+  &__info {
+    font-size: 12px;
+  }
+  &__stats {
     @include utils.flex(25px);
     flex-wrap: wrap;
     width: 100%;
-    div {
-      width: calc(50% - 12.5px);
-    }
-    h1 {
+  }
+  &__stat {
+    width: calc(50% - 12.5px);
+    &__title {
       font-size: 88px;
+      border-left: 1px solid #000;
+      padding: 0 25px;
     }
-    p {
+    &__text {
       font-weight: bold;
       font-size: 20px;
-    }
-    h1,
-    p {
       border-left: 1px solid #000;
       padding: 0 25px;
     }
