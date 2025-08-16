@@ -11,8 +11,7 @@ const CircuitPage = async ({
 }) => {
   const { slug } = await params;
   const currentCircuit = circuits.find(
-    (circuit: Circuit) => circuit.slug === slug
-  );
+    (circuit: Circuit) => circuit.slug === slug);
 
   if (!currentCircuit) {
     return null;
