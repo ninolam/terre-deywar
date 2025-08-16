@@ -16,7 +16,7 @@ const Circuits = () => {
         </p>
       </div>
       <div className='Circuits__slider'>
-        <CircuitSlider cards={circuits} />
+        <CircuitSlider circuits={circuits} />
       </div>
     </section>
   );

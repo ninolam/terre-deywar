@@ -28,7 +28,6 @@ export const circuits = [
         'Au programme :\n• Beach Volley\n• Méditation\n• Site historique patrimoine mondial de l’UNESCO\n' +
         'Bivouac:\n• Nous fournissons : matelas, couvertures et tentes',
     },
-
     locations: {
       title: 'DJANET',
       description:
@@ -40,9 +39,24 @@ export const circuits = [
         'Volley ball, randonnées désertique et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
     },
     stats: {
-      duration: { value: '8', unit: 'jours', label: 'Durée du circuit' },
-      participants: { value: '15', unit: '', label: 'Participants maximum' },
-      price: { value: '550', unit: 'euros', label: 'à partir de 550 euros' },
+      title: 'Découvrez les chiffres clés du circuit Ihrir',
+      description: 'Le circuit Ihrir offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
+      items: [{
+        title: '15',
+        text: '15 places disponible',
+      },
+      {
+        title: '10',
+        text: 'Durée du circuit : 10 jours',
+      },
+      {
+        title: '550',
+        text: 'Tarif : 550, 00 €*',
+      },
+      {
+        title: '20',
+        text: 'Distance parcourus : 20 Km',
+      }],
     },
     gallery: {
       title: 'PLUS DE PHOTOS DU CIRCUIT',
@@ -76,7 +90,7 @@ export const circuits = [
     },
 
     locations: {
-      title: 'IHRIR',
+      title: 'LIEUX',
       description:
         'Découvrez un paradis secret : palmeraie luxuriante, bassins naturels, falaises sculptées, et scènes de vie gravées dans la roche.',
     },
@@ -86,9 +100,24 @@ export const circuits = [
         'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
     },
     stats: {
-      duration: { value: '8', unit: 'jours', label: 'Durée du circuit' },
-      participants: { value: '15', unit: '', label: 'Participants maximum' },
-      price: { value: '550', unit: 'euros', label: 'à partir de 550 euros' },
+      title: 'Découvrez les chiffres clés du circuit Ihrir',
+      description: 'Le circuit Ihrir offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
+      items: [{
+        title: '15',
+        text: '15 places disponible',
+      },
+      {
+        title: '10',
+        text: 'Durée du circuit : 10 jours',
+      },
+      {
+        title: '550',
+        text: 'Tarif : 550, 00 €*',
+      },
+      {
+        title: '20',
+        text: 'Distance parcourus : 20 Km',
+      }],
     },
     gallery: {
       title: 'PLUS DE PHOTOS DU CIRCUIT',
@@ -98,7 +127,7 @@ export const circuits = [
   },
   {
     slug: "terre-d'eywar-tamanrasset",
-    title: 'TAMANRASSET',
+    title: 'LIEUX',
     description: 'Touareg, music, bivouac',
     mainDescription:
       'Ce circuit vous emmène à Tamanrasset, capitale du Sud, entre tradition touarègue et paysages grandioses du Hoggar. Partez à l’aventure jusqu’à l’Assekrem et vivez des moments forts au rythme des musiques et des légendes du désert.',
@@ -121,7 +150,7 @@ export const circuits = [
     },
 
     locations: {
-      title: 'TAMANRASSET',
+      title: 'LIEUX',
       description:
         'Partez à la rencontre du Hoggar, admirez le majestueux Assekrem, et plongez dans la culture touarègue au cœur du désert.',
     },
@@ -131,9 +160,24 @@ export const circuits = [
         'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
     },
     stats: {
-      duration: { value: '8', unit: 'jours', label: 'Durée du circuit' },
-      participants: { value: '15', unit: '', label: 'Participants maximum' },
-      price: { value: '550', unit: 'euros', label: 'à partir de 550 euros' },
+      title: 'Découvrez les chiffres clés du circuit Tamanrasset',
+      description: 'Le circuit Tamanrasset offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
+      items: [{
+        title: '15',
+        text: '15 places disponible',
+      },
+      {
+        title: '10',
+        text: 'Durée du circuit : 10 jours',
+      },
+      {
+        title: '550',
+        text: 'Tarif : 550, 00 €*',
+      },
+      {
+        title: '20',
+        text: 'Distance parcourus : 20 Km',
+      }],
     },
     gallery: {
       title: 'PLUS DE PHOTOS DU CIRCUIT',
@@ -166,7 +210,7 @@ export const circuits = [
     },
 
     locations: {
-      title: 'TAMANRASSET',
+      title: 'LIEUX',
       description:
         'Partez à la rencontre du Hoggar, admirez le majestueux Assekrem, et plongez dans la culture touarègue au cœur du désert.',
     },
@@ -176,9 +220,24 @@ export const circuits = [
         'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
     },
     stats: {
-      duration: { value: '8', unit: 'jours', label: 'Durée du circuit' },
-      participants: { value: '15', unit: '', label: 'Participants maximum' },
-      price: { value: '550', unit: 'euros', label: 'à partir de 550 euros' },
+      title: 'Découvrez les chiffres clés du circuit Tamanrasset',
+      description: 'Le circuit Tamanrasset offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
+      items: [{
+        title: '15',
+        text: '15 places disponible',
+      },
+      {
+        title: '10',
+        text: 'Durée du circuit : 10 jours',
+      },
+      {
+        title: '550',
+        text: 'Tarif : 550, 00 €*',
+      },
+      {
+        title: '20',
+        text: 'Distance parcourus : 20 Km',
+      }],
     },
     gallery: {
       title: 'PLUS DE PHOTOS DU CIRCUIT',
@@ -187,22 +246,184 @@ export const circuits = [
     },
   },
   {
-    title: 'TADRAT ROUGE 1',
+    slug: "terre-d'eywar-tamanrasset",
+    title: 'TEST 1',
     description: 'Touareg, music, bivouac',
-    longDescription: 'Ce circuit vous permettra de découvrir les merveilles du désert algérien. Vous pourrez profiter de la beauté du désert, des paysages et des activités que nous vous proposons.',
-    image: '/images/section-circuits/image-circuit-2.jpg',
-  },
-  {
-    title: 'IHRIR, ESSENDILENE Bivouac 1',
-    description: 'Touareg, music, bivouac',
-    longDescription: 'Ce circuit vous permettra de découvrir les merveilles du désert algérien. Vous pourrez profiter de la beauté du désert, des paysages et des activités que nous vous proposons.',
-    image: '/images/section-circuits/image-circuit-1.jpg',
-  },
-  {
-    title: 'Tamanrasset 1',
-    description: 'Touareg, music, bivouac',
-    longDescription: 'Ce circuit vous permettra de découvrir les merveilles du désert algérien. Vous pourrez profiter de la beauté du désert, des paysages et des activités que nous vous proposons.',
+    mainDescription:
+      'Ce circuit vous emmène à Tamanrasset, capitale du Sud, entre tradition touarègue et paysages grandioses du Hoggar. Partez à l’aventure jusqu’à l’Assekrem et vivez des moments forts au rythme des musiques et des légendes du désert.',
     image: '/images/section-circuits/image-circuit-3.jpg',
+    images: [
+      '/images/section-circuits/image-circuit-3.jpg',
+      '/images/section-circuits/image-circuit-3.jpg',
+      '/images/section-circuits/image-circuit-3.jpg',
+    ],
+
+    subtitle: 'Aventure',
+    mainTitle: 'Explorez Tamanrasset et les terres sacrées du Hoggar',
+    included: 'Ce qui est inclus :',
+    support: {
+      label:
+        'Prise en charge:\n• Vol aller-retour Alger/Tamanrasset\n• Excursions en 4x4\n• Transferts aéroport\n• Pension complète : petit déjeuner, déjeuner, goûter et dîner\n' +
+        'Accompagnement:\n• Cuisinier\n• Guide touristique\n• Musicien\n' +
+        'Au programme :\n• Randonnées dans l’Assekrem\n• Visite de l’ermitage du Père de Foucauld\n• Soirées musicales autour du feu\n' +
+        'Bivouac:\n• Nous fournissons : matelas, couvertures et tentes',
+    },
+
+    locations: {
+      title: 'LIEUX',
+      description:
+        'Partez à la rencontre du Hoggar, admirez le majestueux Assekrem, et plongez dans la culture touarègue au cœur du désert.',
+    },
+    activities: {
+      title: 'ACTIVITÉS',
+      description:
+        'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
+    },
+    stats: {
+      title: 'Découvrez les chiffres clés du circuit Tamanrasset',
+      description: 'Le circuit Tamanrasset offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
+      items: [{
+        title: '15',
+        text: '15 places disponible',
+      },
+      {
+        title: '10',
+        text: 'Durée du circuit : 10 jours',
+      },
+      {
+        title: '550',
+        text: 'Tarif : 550, 00 €*',
+      },
+      {
+        title: '20',
+        text: 'Distance parcourus : 20 Km',
+      }],
+    },
+    gallery: {
+      title: 'PLUS DE PHOTOS DU CIRCUIT',
+      description:
+        'Découvrez les paysages et moments inoubliables du circuit TAMANRASSET.',
+    },
+  },
+  {
+    slug: "terre-d'eywar-tamanrasset",
+    title: 'TEST 2',
+    description: 'Touareg, music, bivouac',
+    mainDescription:
+      'Ce circuit vous emmène à Tamanrasset, capitale du Sud, entre tradition touarègue et paysages grandioses du Hoggar. Partez à l’aventure jusqu’à l’Assekrem et vivez des moments forts au rythme des musiques et des légendes du désert.',
+    image: '/images/section-circuits/image-circuit-3.jpg',
+    images: [
+      '/images/section-circuits/image-circuit-3.jpg',
+      '/images/section-circuits/image-circuit-3.jpg',
+      '/images/section-circuits/image-circuit-3.jpg',
+    ],
+
+    subtitle: 'Aventure',
+    mainTitle: 'Explorez Tamanrasset et les terres sacrées du Hoggar',
+    included: 'Ce qui est inclus :',
+    support: {
+      label:
+        'Prise en charge:\n• Vol aller-retour Alger/Tamanrasset\n• Excursions en 4x4\n• Transferts aéroport\n• Pension complète : petit déjeuner, déjeuner, goûter et dîner\n' +
+        'Accompagnement:\n• Cuisinier\n• Guide touristique\n• Musicien\n' +
+        'Au programme :\n• Randonnées dans l’Assekrem\n• Visite de l’ermitage du Père de Foucauld\n• Soirées musicales autour du feu\n' +
+        'Bivouac:\n• Nous fournissons : matelas, couvertures et tentes',
+    },
+
+    locations: {
+      title: 'LIEUX',
+      description:
+        'Partez à la rencontre du Hoggar, admirez le majestueux Assekrem, et plongez dans la culture touarègue au cœur du désert.',
+    },
+    activities: {
+      title: 'ACTIVITÉS',
+      description:
+        'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
+    },
+    stats: {
+      title: 'Découvrez les chiffres clés du circuit Tamanrasset',
+      description: 'Le circuit Tamanrasset offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
+      items: [{
+        title: '15',
+        text: '15 places disponible',
+      },
+      {
+        title: '10',
+        text: 'Durée du circuit : 10 jours',
+      },
+      {
+        title: '550',
+        text: 'Tarif : 550, 00 €*',
+      },
+      {
+        title: '20',
+        text: 'Distance parcourus : 20 Km',
+      }],
+    },
+    gallery: {
+      title: 'PLUS DE PHOTOS DU CIRCUIT',
+      description:
+        'Découvrez les paysages et moments inoubliables du circuit TAMANRASSET.',
+    },
+  },
+  {
+    slug: "terre-d'eywar-tamanrasset",
+    title: 'TEST 3',
+    description: 'Touareg, music, bivouac',
+    mainDescription:
+      'Ce circuit vous emmène à Tamanrasset, capitale du Sud, entre tradition touarègue et paysages grandioses du Hoggar. Partez à l’aventure jusqu’à l’Assekrem et vivez des moments forts au rythme des musiques et des légendes du désert.',
+    image: '/images/section-circuits/image-circuit-3.jpg',
+    images: [
+      '/images/section-circuits/image-circuit-3.jpg',
+      '/images/section-circuits/image-circuit-3.jpg',
+      '/images/section-circuits/image-circuit-3.jpg',
+    ],
+
+    subtitle: 'Aventure',
+    mainTitle: 'Explorez Tamanrasset et les terres sacrées du Hoggar',
+    included: 'Ce qui est inclus :',
+    support: {
+      label:
+        'Prise en charge:\n• Vol aller-retour Alger/Tamanrasset\n• Excursions en 4x4\n• Transferts aéroport\n• Pension complète : petit déjeuner, déjeuner, goûter et dîner\n' +
+        'Accompagnement:\n• Cuisinier\n• Guide touristique\n• Musicien\n' +
+        'Au programme :\n• Randonnées dans l’Assekrem\n• Visite de l’ermitage du Père de Foucauld\n• Soirées musicales autour du feu\n' +
+        'Bivouac:\n• Nous fournissons : matelas, couvertures et tentes',
+    },
+
+    locations: {
+      title: 'LIEUX',
+      description:
+        'Partez à la rencontre du Hoggar, admirez le majestueux Assekrem, et plongez dans la culture touarègue au cœur du désert.',
+    },
+    activities: {
+      title: 'ACTIVITÉS',
+      description:
+        'Volley ball, randonnées et immersion culturelle, jeux de société, musique avec les touaregs, rencontres avec les nomades',
+    },
+    stats: {
+      title: 'Découvrez les chiffres clés du circuit Tamanrasset',
+      description: 'Le circuit Tamanrasset offre une expérience inoubliable à travers le désert algérien. Avec des paysages à couper le souffle et une immersion dans la culture touareg, chaque participant vit une aventure unique.',
+      items: [{
+        title: '15',
+        text: '15 places disponible',
+      },
+      {
+        title: '10',
+        text: 'Durée du circuit : 10 jours',
+      },
+      {
+        title: '550',
+        text: 'Tarif : 550, 00 €*',
+      },
+      {
+        title: '20',
+        text: 'Distance parcourus : 20 Km',
+      }],
+    },
+    gallery: {
+      title: 'PLUS DE PHOTOS DU CIRCUIT',
+      description:
+        'Découvrez les paysages et moments inoubliables du circuit TAMANRASSET.',
+    },
   },
 ];
 
@@ -227,24 +448,5 @@ export const reservations = [
     icon: 'Plane',
     title: 'Profiter de votre expérience',
     text: 'Profitez de votre expérience, notre équipe organise tout, les repas, les sites, le transport.',
-  },
-];
-
-export const dataStatistics = [
-  {
-    title : '15',
-    text : '15 places disponible',
-  },
-  {
-    title : '10',
-    text : 'Durée du circuit : 10 jours',
-  },
-  {
-    title : '550',
-    text : 'Tarif : 550, 00 €*',
-  },
-  {
-    title : '20',
-    text : 'Distance parcourus : 20 Km',
   },
 ];

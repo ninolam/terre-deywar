@@ -3,7 +3,10 @@
 .CircuitIntro {
   background-color: utils.$backgroundSecondary;
   color: utils.$darkbrown;
-  padding-top: 100px;
+  padding-top: utils.$headerHeight;
+  @include utils.breakpoint(mobile) {
+    padding-top: utils.$headerHeightMobile;
+  }
 
   &__container {
     @include utils.container();

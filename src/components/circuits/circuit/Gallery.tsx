@@ -1,8 +1,13 @@
 import Slider from '@/components/common/slider/Slider';
-import { images } from '@/utils/data/slider';
 import React from 'react';
+import { Circuit } from '@/types/types';
 
-const CircuitGallery = () => {
+interface CircuitGalleryProps {
+  circuit: Circuit;
+}
+
+const CircuitGallery = ({ circuit }: CircuitGalleryProps) => {
+  const { images } = circuit;
   return (
     <section className='CircuitGallery'>
       <div className='CircuitGallery__container'>
@@ -10,7 +15,7 @@ const CircuitGallery = () => {
         <p className='CircuitGallery__text'>
           Découvrez les paysages et moments inoubliables du circuit TADRAT.
         </p>
-        <Slider items={images} context='image' classNameModifier='dark' />
+        {images && <Slider items={images} context='image' classNameModifier='dark' />}
       </div>
     </section>
   );

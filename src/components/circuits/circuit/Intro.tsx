@@ -1,40 +1,42 @@
 import React from 'react';
 import Button from '@/components/common/Button';
 import Image from 'next/image';
+import { Circuit } from '@/types/types';
 
-const CircuitIntro = () => {
+interface CircuitIntroProps {
+  circuit: Circuit;
+}
+const CircuitIntro = ({ circuit }: CircuitIntroProps) => {
+  const { title, mainDescription, subtitle, locations, activities } = circuit;
   return (
     <section className='CircuitIntro'>
       <div className='CircuitIntro__container'>
         <div className='CircuitIntro__details'>
           <div className='CircuitIntro__explore'>
-            <p className='CircuitIntro__explore__label'>Aventure</p>
-            <h1>Explorez les merveilles de djanet avec le circuit TADRAT</h1>
+            <p className='CircuitIntro__explore__label'>{subtitle}</p>
+            <h1>{title}</h1>
             <p>
-              Ce circuit vous emmène à travers des paysages époustouflants, où
-              vous découvrirez la culture fascinante des Touaregs. Participez à
-              des activités immersives, telles que des concerts de musiciens du
-              désert et des visites de villages traditionnels.
+              {mainDescription}
             </p>
           </div>
           <div className='CircuitIntro__sections'>
-            <div>
-              <h2>Lieux</h2>
+            {locations && <div>
+              <h2>{locations.title}</h2>
               <p>
-                Visitez les dunes de sable et les oasis, les peintures rupestres
-                datant de 10000 ans et pleins d’autres.
+                {locations.description}
               </p>
             </div>
-            <div>
-              <h2>Activités</h2>
+            }
+            {activities && <div>
+              <h2>{activities.title}</h2>
               <p>
-                Volley ball, randonnées et immersion culturelle, jeux de
-                sociétés, music avec les touaregs, rencontres avec les nomades.
+                {activities.description}
               </p>
             </div>
+            }
           </div>
           <div className='CircuitIntro__actions'>
-            <Button text='Voir les dates disponible de ce circuit' />
+            <Button text={`Voir les dates disponible de ${title}`} />
             <Button text='Voir plus de photos' />
           </div>
         </div>

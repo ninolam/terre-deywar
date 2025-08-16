@@ -9,16 +9,12 @@ import 'swiper/scss/effect-coverflow';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import CircuitCard from '@/components/common/cards/CircuitCard';
 import Button from '@/components/common/Button';
+import { Circuit } from '@/types/types';
 
-interface Card {
-  title: string;
-  description: string;
-  image: string;
-}
 
-const CircuitSlider = ({ cards }: { cards: Card[] }) => {
+const CircuitSlider = ({ circuits }: { circuits: Circuit[] }) => {
   // Calculate the middle slide index
-  const initialSlide = Math.floor(cards.length / 2);
+  const initialSlide = Math.floor(circuits.length / 2);
   const swiperRef = useRef<any>(null);
   const [activeSlide, setActiveSlide] = useState(initialSlide);
   return (
@@ -31,7 +27,7 @@ const CircuitSlider = ({ cards }: { cards: Card[] }) => {
           swiperRef.current = swiper;
         }}
         onSlideChange={(swiper) => {
-          const index = swiper.isEnd ? cards.length - 1 : swiper.activeIndex;
+          const index = swiper.isEnd ? circuits.length - 1 : swiper.activeIndex;
           setActiveSlide(index);
         }}
         watchSlidesProgress={true}
@@ -71,10 +67,10 @@ const CircuitSlider = ({ cards }: { cards: Card[] }) => {
         }}
         loop={true}
       >
-        {cards.map((card, index) => {
+        {circuits.map((circuit, index) => {
           return (
-            <SwiperSlide key={card.title} onClick={() => swiperRef.current.slideTo(index)} >
-              <CircuitCard circuit={card} withButton={index === activeSlide} />
+            <SwiperSlide key={circuit.title} onClick={() => swiperRef.current.slideTo(index)} >
+              <CircuitCard circuit={circuit} withButton={index === activeSlide} />
             </SwiperSlide>
           );
         })}
