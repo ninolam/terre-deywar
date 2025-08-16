@@ -31,16 +31,25 @@
   }
   &__stat {
     width: calc(50% - 12.5px);
+    &__title, &__text {
+      padding: 0 25px;
+      border-left: 1px solid #000;
+      @include utils.breakpoint(mobile) {
+        padding: 0 15px;
+      }
+    }
     &__title {
       font-size: 88px;
-      border-left: 1px solid #000;
-      padding: 0 25px;
+      @include utils.breakpoint(mobile) {
+        font-size: 64px;
+      }
     }
     &__text {
-      font-weight: bold;
       font-size: 20px;
-      border-left: 1px solid #000;
-      padding: 0 25px;
+      font-weight: 600;
+      @include utils.breakpoint(mobile) {
+        font-size: 12px;
+      }
     }
   }
 }

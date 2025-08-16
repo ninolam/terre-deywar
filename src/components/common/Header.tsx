@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Button from './Button';
 import { headerLinks } from '@/utils/data/layout';
 import { X, Menu } from 'lucide-react';
@@ -9,6 +10,10 @@ import { X, Menu } from 'lucide-react';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Check if we're on a circuit detail page
+  const isCircuitDetailPage = pathname.startsWith('/circuits/');
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -24,7 +29,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className={`Header ${isScrolled ? 'Header--background' : ''}`}>
+    <header className={`Header ${isScrolled || isCircuitDetailPage ? 'Header--background' : ''}`}>
       <div className='Header__container'>
         <Link href='/'>
           <Image

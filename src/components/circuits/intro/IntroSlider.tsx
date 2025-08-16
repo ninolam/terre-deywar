@@ -5,9 +5,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import CircuitCard from '../../common/cards/CircuitCard';
 import 'swiper/scss';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { Circuit } from '@/types/types';
 
 interface IntroSliderProps {
-  circuits: any[];
+  circuits: Circuit[];
   // eslint-disable-next-line no-unused-vars
   setActiveSlide: (index: number) => void;
   activeSlide: number;
@@ -53,7 +54,7 @@ const IntroSlider = ({
           },
         }}
       >
-        {circuits.map((circuit) => {
+        {circuits.map((circuit: Circuit) => {
           return (
             <SwiperSlide key={circuit.title} style={{ cursor: 'pointer' }}>
               <CircuitCard circuit={circuit} />

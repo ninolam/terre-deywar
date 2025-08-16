@@ -30,17 +30,10 @@ const Slider: React.FC<SliderProps> = ({
   ) => {
     switch (context) {
     case 'image':
-      return (
-        <div
-          className='Slider__image'
-          style={{ backgroundImage: `url(${item})` }}
-        />
-      );
+      return <div className='Slider__image' style={{ backgroundImage: `url(${item})` }} />;
     case 'discoverCard':
       if (typeof item === 'object') {
-        return (
-          <Card title={item.title} image={item.image} text={item.text} />
-        );
+        return <Card title={item.title} image={item.image} text={item.text} />;
       }
       return null;
     default:
@@ -50,9 +43,7 @@ const Slider: React.FC<SliderProps> = ({
 
   return (
     <section
-      className={`Slider ${
-        classNameModifier ? `Slider--${classNameModifier}` : ''
-      }`}
+      className={`Slider ${classNameModifier ? `Slider--${classNameModifier}` : ''}`}
     >
       <div className='Slider__swiper-container'>
         <Swiper
@@ -102,15 +93,15 @@ const Slider: React.FC<SliderProps> = ({
           </button>
         </div>
         <div className='Slider__pagination'>
-          {items.map((item, index) => (
-            <div
-              onClick={() => swiperRef.current?.slideTo(index)}
-              className={`Slider__pagination__dot ${
-                activeSlide === index ? 'Slider__pagination__dot--active' : ''
-              }`}
-              key={typeof item === 'object' ? item.title : item}
-            />
-          ))}
+          {items.map((item, index) => {
+            return (
+              <div
+                onClick={() => swiperRef.current?.slideTo(index)}
+                className={`Slider__pagination__dot ${activeSlide === index ? 'Slider__pagination__dot--active' : ''}`}
+                key={typeof item === 'object' ? item.title : item}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
