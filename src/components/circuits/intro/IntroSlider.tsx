@@ -6,14 +6,26 @@ import CircuitCard from '../../common/cards/CircuitCard';
 import 'swiper/scss';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
-const IntroSlider = ({ circuits, setActiveSlide, activeSlide }: { circuits: any[], setActiveSlide: (_index: number) => void, activeSlide: number }) => {
+interface IntroSliderProps {
+  circuits: any[];
+  // eslint-disable-next-line no-unused-vars
+  setActiveSlide: (index: number) => void;
+  activeSlide: number;
+}
+
+const IntroSlider = ({
+  circuits,
+  setActiveSlide,
+  activeSlide,
+}: IntroSliderProps) => {
   const swiperRef = useRef<any>(null);
-  const indexToShow = activeSlide - 1 < 0 ? circuits.length - 1 : activeSlide - 1;
+  const indexToShow =
+    activeSlide - 1 < 0 ? circuits.length - 1 : activeSlide - 1;
 
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={3}
         spaceBetween={30}
         ref={swiperRef}
         onSwiper={(swiper) => {
@@ -41,12 +53,9 @@ const IntroSlider = ({ circuits, setActiveSlide, activeSlide }: { circuits: any[
           },
         }}
       >
-        {circuits.map((circuit, index) => {
+        {circuits.map((circuit) => {
           return (
-            <SwiperSlide
-              key={circuit.title}
-              style={{ cursor: 'pointer' }}
-            >
+            <SwiperSlide key={circuit.title} style={{ cursor: 'pointer' }}>
               <CircuitCard circuit={circuit} />
             </SwiperSlide>
           );
@@ -58,7 +67,9 @@ const IntroSlider = ({ circuits, setActiveSlide, activeSlide }: { circuits: any[
           <ArrowRight onClick={() => swiperRef.current?.slideNext()} />
         </div>
         <div className='CircuitsIntroSlider__navigation__separator' />
-        <h2 className='CircuitsIntroSlider__navigation__title'>0{[indexToShow + 1]}</h2>
+        <h2 className='CircuitsIntroSlider__navigation__title'>
+          0{[indexToShow + 1]}
+        </h2>
       </div>
     </>
   );

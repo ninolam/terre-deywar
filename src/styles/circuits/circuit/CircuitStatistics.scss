@@ -1,0 +1,46 @@
+@use 'utils';
+
+.CircuitStatistics {
+  background-color: utils.$backgroundPrimary;
+  color: utils.$darkbrown;
+  padding: 25px 0;
+  &__container {
+    @include utils.container();
+    @include utils.flex(50px);
+    align-items: center;
+    @include utils.breakpoint(mobile) {
+      flex-direction: column;
+    }
+  }
+  &__discover {
+    @include utils.flex(25px);
+    flex-direction: column;
+    width: 100%;
+    &__label {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+  &__info {
+    font-size: 12px;
+  }
+  &__stats {
+    @include utils.flex(25px);
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &__stat {
+    width: calc(50% - 12.5px);
+    &__title {
+      font-size: 88px;
+      border-left: 1px solid #000;
+      padding: 0 25px;
+    }
+    &__text {
+      font-weight: bold;
+      font-size: 20px;
+      border-left: 1px solid #000;
+      padding: 0 25px;
+    }
+  }
+}

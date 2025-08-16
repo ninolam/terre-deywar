@@ -1,0 +1,14 @@
+@use 'utils';
+
+.CircuitGallery {
+  background-color: utils.$backgroundSecondary;
+  color: utils.$darkbrown;
+  &__container {
+    @include utils.container();
+  }
+  &__title,
+  &__text {
+    text-align: center;
+    margin-top: 25px;
+  }
+}
