@@ -1,7 +1,7 @@
 import { circuits } from '@/utils/data/circuits';
-import CircuitIntro from '@/components/circuits/circuit/Intro';
-import CircuitStatistics from '@/components/circuits/circuit/Statistics';
-import CircuitGallery from '@/components/circuits/circuit/Gallery';
+import CircuitIntro from '@/components/circuits/circuit/CircuitIntro';
+import CircuitStatistics from '@/components/circuits/circuit/CircuitStatistics';
+import CircuitGallery from '@/components/circuits/circuit/CircuitGallery';
 import { Circuit } from '@/types/types';
 
 const CircuitPage = async ({
@@ -10,7 +10,9 @@ const CircuitPage = async ({
   params: Promise<{ slug: string }>;
 }) => {
   const { slug } = await params;
-  const currentCircuit = circuits.find((circuit: Circuit) => circuit.slug === slug);
+  const currentCircuit = circuits.find(
+    (circuit: Circuit) => circuit.slug === slug
+  );
 
   if (!currentCircuit) {
     return null;
